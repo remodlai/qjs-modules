@@ -39,8 +39,8 @@ typedef enum {
 
 static int reader_update(ReadableStreamReader*, JSContext*);
 static BOOL reader_passthrough(ReadableStreamReader*, JSValueConst, JSContext*);
-static int readable_unlock(ReadableStream*, ReadableStreamReader*);
-static int writable_unlock(WritableStream*, WritableStreamWriter*);
+static BOOL readable_unlock(ReadableStream*, ReadableStreamReader*);
+static BOOL writable_unlock(WritableStream*, WritableStreamWriter*);
 static JSValue js_readable_callback(JSContext*, ReadableStream*, ReadableCallback, int, JSValueConst[]);
 static JSValue js_writable_callback(JSContext*, WritableStream*, WritableCallback, int, JSValueConst[]);
 static JSValue js_reader_wrap(JSContext* ctx, ReadableStreamReader* rd);

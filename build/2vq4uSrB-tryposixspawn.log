@@ -1,0 +1,16 @@
+Compile output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3fd48/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3fd48.dir/build.make CMakeFiles/cmTC_3fd48.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fd48.dir/2vq4uSrB-tryposixspawn.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3fd48.dir/2vq4uSrB-tryposixspawn.c.o -c /workspace/qjs-modules/build/2vq4uSrB-tryposixspawn.c
+Linking C executable cmTC_3fd48
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fd48.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3fd48.dir/2vq4uSrB-tryposixspawn.c.o -o cmTC_3fd48 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Run output:
+

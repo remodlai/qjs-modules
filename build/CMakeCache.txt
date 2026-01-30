@@ -370,7 +370,7 @@ QUICKJS_LIBRARY_DIR:PATH=/usr/local/lib/aarch64-linux-gnu
 QUICKJS_MODULE_PATH:PATH=/usr/local/lib/aarch64-linux-gnu/aarch64-linux-gnu/quickjs;/usr/local/lib/aarch64-linux-gnu/quickjs;/usr/local/lib/quickjs
 
 //Name of the computer/site where compile is being run
-SITE:STRING=53f06f572c0b
+SITE:STRING=c4415477091c
 
 //Use POSIX spawn()
 USE_SPAWN:BOOL=ON
