@@ -1,0 +1,40 @@
+#ifndef jsm_builtin_native
+#define jsm_builtin_native(x)
+#endif
+
+#ifndef jsm_builtin_compiled
+#define jsm_builtin_compiled(x)
+#endif
+
+jsm_builtin_native(arraybuffer_sink)
+jsm_builtin_native(blob)
+jsm_builtin_native(child_process)
+jsm_builtin_native(deep)
+jsm_builtin_native(directory)
+jsm_builtin_native(inspect)
+jsm_builtin_native(lexer)
+jsm_builtin_native(location)
+jsm_builtin_native(misc)
+jsm_builtin_native(path)
+jsm_builtin_native(pointer)
+jsm_builtin_native(predicate)
+jsm_builtin_native(repeater)
+jsm_builtin_native(syscallerror)
+jsm_builtin_native(textcode)
+jsm_builtin_native(tree_walker)
+jsm_builtin_native(virtual)
+jsm_builtin_native(xml)
+
+jsm_builtin_compiled(assert)
+jsm_builtin_compiled(console)
+jsm_builtin_compiled(events)
+jsm_builtin_compiled(fs)
+jsm_builtin_compiled(io)
+jsm_builtin_compiled(perf_hooks)
+jsm_builtin_compiled(process)
+jsm_builtin_compiled(repl)
+jsm_builtin_compiled(require)
+jsm_builtin_compiled(stack)
+jsm_builtin_compiled(tty)
+jsm_builtin_compiled(url)
+jsm_builtin_compiled(util)

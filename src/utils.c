@@ -2302,7 +2302,7 @@ js_value_dump(JSContext* ctx, JSValueConst value, DynBuf* db) {
       else if(JS_IsBigDecimal(value))
         dbuf_putc(db, 'm');
 #endif
-      else if(JS_IsBigInt(ctx, value))
+      else if(JS_IsBigInt(value))
         dbuf_putc(db, 'n');
 
       break;

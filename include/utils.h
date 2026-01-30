@@ -455,7 +455,7 @@ js_value_type2flag(ValueType type) {
 
 ValueType js_value_type(JSContext*, JSValueConst);
 const char* const* js_value_types(void);
-const int js_value_types_length();
+int js_value_types_length();
 const char* js_value_typeof(JSValueConst);
 const char* js_value_type_name(ValueType type);
 const char* js_value_tag_name(int tag);
@@ -1080,7 +1080,7 @@ js_is_bignumber(JSContext* ctx, JSValueConst value) {
   if(JS_IsBigDecimal(value) || JS_IsBigFloat(value))
     return TRUE;
 #endif
-  return JS_IsBigInt(ctx, value);
+  return JS_IsBigInt(value);
 }
 
 static inline BOOL

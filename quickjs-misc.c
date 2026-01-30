@@ -635,7 +635,7 @@ js_misc_topointer(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst 
 
 static JSValue
 js_misc_toarraybuffer(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[]) {
-  BOOL is_bigint = JS_IsBigInt(ctx, argv[0]);
+  BOOL is_bigint = JS_IsBigInt(argv[0]);
 
   if(argc >= 2 && (JS_IsNumber(argv[0]) || is_bigint)) {
     uintptr_t addr = (uintptr_t)js_topointer(ctx, argv[0]);
@@ -778,7 +778,7 @@ js_misc_searcharraybuffer(JSContext* ctx, JSValueConst this_val, int argc, JSVal
     if(needle.size <= range.size && (ptr = memmem(range.base, range.size, needle.base, needle.size))) {
       ptrdiff_t ofs = ptr - haystack.base;
 
-      if(ofs > MAX_SAFE_INTEGER || (n && JS_IsBigInt(ctx, argv[i - n])))
+      if(ofs > MAX_SAFE_INTEGER || (n && JS_IsBigInt(argv[i - n])))
         return JS_NewBigUint64(ctx, ofs);
 
       return JS_NewInt64(ctx, ofs);
@@ -2801,7 +2801,7 @@ js_misc_is(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[],
     case IS_BIGDECIMAL: r = JS_IsBigDecimal(arg); break;
     case IS_BIGFLOAT: r = JS_IsBigFloat(arg); break;
 #endif
-    case IS_BIGINT: r = JS_IsBigInt(ctx, arg); break;
+    case IS_BIGINT: r = JS_IsBigInt(arg); break;
     case IS_BOOL: r = JS_IsBool(arg); break;
     // case IS_CFUNCTION: r = JS_GetClassID(arg) == JS_CLASS_C_FUNCTION; break;
     // case IS_BOUNDFUNCTION: r = JS_GetClassID(arg) == JS_CLASS_BOUND_FUNCTION; break;

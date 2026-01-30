@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/brianbagdasarian/projects/remodl-quickjs-emscripten/qjs-modules/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

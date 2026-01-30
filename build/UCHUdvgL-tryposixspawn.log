@@ -1,0 +1,15 @@
+Compile output:
+Change Dir: '/Users/brianbagdasarian/projects/remodl-quickjs-emscripten/qjs-modules/build/CMakeFiles/CMakeScratch/TryCompile-Eyqa6Q'
+
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e6152/fast
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e6152.dir/build.make CMakeFiles/cmTC_e6152.dir/build
+Building C object CMakeFiles/cmTC_e6152.dir/UCHUdvgL-tryposixspawn.c.o
+/usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_e6152.dir/UCHUdvgL-tryposixspawn.c.o -MF CMakeFiles/cmTC_e6152.dir/UCHUdvgL-tryposixspawn.c.o.d -o CMakeFiles/cmTC_e6152.dir/UCHUdvgL-tryposixspawn.c.o -c /Users/brianbagdasarian/projects/remodl-quickjs-emscripten/qjs-modules/build/UCHUdvgL-tryposixspawn.c
+Linking C executable cmTC_e6152
+/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6152.dir/link.txt --verbose=1
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/cmTC_e6152.dir/UCHUdvgL-tryposixspawn.c.o" -o cmTC_e6152
+
+
+
+Run output:
+
