@@ -1391,6 +1391,30 @@ quickjs-misc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-misc.c.s
 .PHONY : quickjs-misc.c.s
 
+quickjs-mysql.o: quickjs-mysql.c.o
+.PHONY : quickjs-mysql.o
+
+# target to build an object file
+quickjs-mysql.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-mysql.c.o
+.PHONY : quickjs-mysql.c.o
+
+quickjs-mysql.i: quickjs-mysql.c.i
+.PHONY : quickjs-mysql.i
+
+# target to preprocess a source file
+quickjs-mysql.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-mysql.c.i
+.PHONY : quickjs-mysql.c.i
+
+quickjs-mysql.s: quickjs-mysql.c.s
+.PHONY : quickjs-mysql.s
+
+# target to generate assembly for a file
+quickjs-mysql.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-mysql.c.s
+.PHONY : quickjs-mysql.c.s
+
 quickjs-path.o: quickjs-path.c.o
 .PHONY : quickjs-path.o
 
@@ -1414,6 +1438,30 @@ quickjs-path.s: quickjs-path.c.s
 quickjs-path.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-path.c.s
 .PHONY : quickjs-path.c.s
+
+quickjs-pgsql.o: quickjs-pgsql.c.o
+.PHONY : quickjs-pgsql.o
+
+# target to build an object file
+quickjs-pgsql.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-pgsql.c.o
+.PHONY : quickjs-pgsql.c.o
+
+quickjs-pgsql.i: quickjs-pgsql.c.i
+.PHONY : quickjs-pgsql.i
+
+# target to preprocess a source file
+quickjs-pgsql.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-pgsql.c.i
+.PHONY : quickjs-pgsql.c.i
+
+quickjs-pgsql.s: quickjs-pgsql.c.s
+.PHONY : quickjs-pgsql.s
+
+# target to generate assembly for a file
+quickjs-pgsql.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-pgsql.c.s
+.PHONY : quickjs-pgsql.c.s
 
 quickjs-pointer.o: quickjs-pointer.c.o
 .PHONY : quickjs-pointer.o
@@ -1486,6 +1534,54 @@ quickjs-repeater.s: quickjs-repeater.c.s
 quickjs-repeater.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-repeater.c.s
 .PHONY : quickjs-repeater.c.s
+
+quickjs-sockets.o: quickjs-sockets.c.o
+.PHONY : quickjs-sockets.o
+
+# target to build an object file
+quickjs-sockets.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-sockets.c.o
+.PHONY : quickjs-sockets.c.o
+
+quickjs-sockets.i: quickjs-sockets.c.i
+.PHONY : quickjs-sockets.i
+
+# target to preprocess a source file
+quickjs-sockets.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-sockets.c.i
+.PHONY : quickjs-sockets.c.i
+
+quickjs-sockets.s: quickjs-sockets.c.s
+.PHONY : quickjs-sockets.s
+
+# target to generate assembly for a file
+quickjs-sockets.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-sockets.c.s
+.PHONY : quickjs-sockets.c.s
+
+quickjs-stream.o: quickjs-stream.c.o
+.PHONY : quickjs-stream.o
+
+# target to build an object file
+quickjs-stream.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-stream.c.o
+.PHONY : quickjs-stream.c.o
+
+quickjs-stream.i: quickjs-stream.c.i
+.PHONY : quickjs-stream.i
+
+# target to preprocess a source file
+quickjs-stream.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-stream.c.i
+.PHONY : quickjs-stream.c.i
+
+quickjs-stream.s: quickjs-stream.c.s
+.PHONY : quickjs-stream.s
+
+# target to generate assembly for a file
+quickjs-stream.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qjsm.dir/build.make CMakeFiles/qjsm.dir/quickjs-stream.c.s
+.PHONY : quickjs-stream.c.s
 
 quickjs-syscallerror.o: quickjs-syscallerror.c.o
 .PHONY : quickjs-syscallerror.o
@@ -2633,9 +2729,15 @@ help:
 	@echo "... quickjs-misc.o"
 	@echo "... quickjs-misc.i"
 	@echo "... quickjs-misc.s"
+	@echo "... quickjs-mysql.o"
+	@echo "... quickjs-mysql.i"
+	@echo "... quickjs-mysql.s"
 	@echo "... quickjs-path.o"
 	@echo "... quickjs-path.i"
 	@echo "... quickjs-path.s"
+	@echo "... quickjs-pgsql.o"
+	@echo "... quickjs-pgsql.i"
+	@echo "... quickjs-pgsql.s"
 	@echo "... quickjs-pointer.o"
 	@echo "... quickjs-pointer.i"
 	@echo "... quickjs-pointer.s"
@@ -2645,6 +2747,12 @@ help:
 	@echo "... quickjs-repeater.o"
 	@echo "... quickjs-repeater.i"
 	@echo "... quickjs-repeater.s"
+	@echo "... quickjs-sockets.o"
+	@echo "... quickjs-sockets.i"
+	@echo "... quickjs-sockets.s"
+	@echo "... quickjs-stream.o"
+	@echo "... quickjs-stream.i"
+	@echo "... quickjs-stream.s"
 	@echo "... quickjs-syscallerror.o"
 	@echo "... quickjs-syscallerror.i"
 	@echo "... quickjs-syscallerror.s"

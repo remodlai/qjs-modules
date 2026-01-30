@@ -209,10 +209,38 @@ CMakeFiles/qjsm.dir/quickjs-misc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-misc.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-misc.c -o CMakeFiles/qjsm.dir/quickjs-misc.c.s
 
+CMakeFiles/qjsm.dir/quickjs-mysql.c.o: CMakeFiles/qjsm.dir/flags.make
+CMakeFiles/qjsm.dir/quickjs-mysql.c.o: ../quickjs-mysql.c
+CMakeFiles/qjsm.dir/quickjs-mysql.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/qjsm.dir/quickjs-mysql.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-mysql.c.o -MF CMakeFiles/qjsm.dir/quickjs-mysql.c.o.d -o CMakeFiles/qjsm.dir/quickjs-mysql.c.o -c /workspace/qjs-modules/quickjs-mysql.c
+
+CMakeFiles/qjsm.dir/quickjs-mysql.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qjsm.dir/quickjs-mysql.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/qjs-modules/quickjs-mysql.c > CMakeFiles/qjsm.dir/quickjs-mysql.c.i
+
+CMakeFiles/qjsm.dir/quickjs-mysql.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-mysql.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-mysql.c -o CMakeFiles/qjsm.dir/quickjs-mysql.c.s
+
+CMakeFiles/qjsm.dir/quickjs-pgsql.c.o: CMakeFiles/qjsm.dir/flags.make
+CMakeFiles/qjsm.dir/quickjs-pgsql.c.o: ../quickjs-pgsql.c
+CMakeFiles/qjsm.dir/quickjs-pgsql.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/qjsm.dir/quickjs-pgsql.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-pgsql.c.o -MF CMakeFiles/qjsm.dir/quickjs-pgsql.c.o.d -o CMakeFiles/qjsm.dir/quickjs-pgsql.c.o -c /workspace/qjs-modules/quickjs-pgsql.c
+
+CMakeFiles/qjsm.dir/quickjs-pgsql.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qjsm.dir/quickjs-pgsql.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/qjs-modules/quickjs-pgsql.c > CMakeFiles/qjsm.dir/quickjs-pgsql.c.i
+
+CMakeFiles/qjsm.dir/quickjs-pgsql.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-pgsql.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-pgsql.c -o CMakeFiles/qjsm.dir/quickjs-pgsql.c.s
+
 CMakeFiles/qjsm.dir/quickjs-path.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-path.c.o: ../quickjs-path.c
 CMakeFiles/qjsm.dir/quickjs-path.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/qjsm.dir/quickjs-path.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/qjsm.dir/quickjs-path.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-path.c.o -MF CMakeFiles/qjsm.dir/quickjs-path.c.o.d -o CMakeFiles/qjsm.dir/quickjs-path.c.o -c /workspace/qjs-modules/quickjs-path.c
 
 CMakeFiles/qjsm.dir/quickjs-path.c.i: cmake_force
@@ -226,7 +254,7 @@ CMakeFiles/qjsm.dir/quickjs-path.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-pointer.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-pointer.c.o: ../quickjs-pointer.c
 CMakeFiles/qjsm.dir/quickjs-pointer.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/qjsm.dir/quickjs-pointer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/qjsm.dir/quickjs-pointer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-pointer.c.o -MF CMakeFiles/qjsm.dir/quickjs-pointer.c.o.d -o CMakeFiles/qjsm.dir/quickjs-pointer.c.o -c /workspace/qjs-modules/quickjs-pointer.c
 
 CMakeFiles/qjsm.dir/quickjs-pointer.c.i: cmake_force
@@ -240,7 +268,7 @@ CMakeFiles/qjsm.dir/quickjs-pointer.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-predicate.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-predicate.c.o: ../quickjs-predicate.c
 CMakeFiles/qjsm.dir/quickjs-predicate.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/qjsm.dir/quickjs-predicate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/qjsm.dir/quickjs-predicate.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-predicate.c.o -MF CMakeFiles/qjsm.dir/quickjs-predicate.c.o.d -o CMakeFiles/qjsm.dir/quickjs-predicate.c.o -c /workspace/qjs-modules/quickjs-predicate.c
 
 CMakeFiles/qjsm.dir/quickjs-predicate.c.i: cmake_force
@@ -254,7 +282,7 @@ CMakeFiles/qjsm.dir/quickjs-predicate.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-repeater.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-repeater.c.o: ../quickjs-repeater.c
 CMakeFiles/qjsm.dir/quickjs-repeater.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/qjsm.dir/quickjs-repeater.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/qjsm.dir/quickjs-repeater.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-repeater.c.o -MF CMakeFiles/qjsm.dir/quickjs-repeater.c.o.d -o CMakeFiles/qjsm.dir/quickjs-repeater.c.o -c /workspace/qjs-modules/quickjs-repeater.c
 
 CMakeFiles/qjsm.dir/quickjs-repeater.c.i: cmake_force
@@ -265,10 +293,38 @@ CMakeFiles/qjsm.dir/quickjs-repeater.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-repeater.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-repeater.c -o CMakeFiles/qjsm.dir/quickjs-repeater.c.s
 
+CMakeFiles/qjsm.dir/quickjs-sockets.c.o: CMakeFiles/qjsm.dir/flags.make
+CMakeFiles/qjsm.dir/quickjs-sockets.c.o: ../quickjs-sockets.c
+CMakeFiles/qjsm.dir/quickjs-sockets.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/qjsm.dir/quickjs-sockets.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-sockets.c.o -MF CMakeFiles/qjsm.dir/quickjs-sockets.c.o.d -o CMakeFiles/qjsm.dir/quickjs-sockets.c.o -c /workspace/qjs-modules/quickjs-sockets.c
+
+CMakeFiles/qjsm.dir/quickjs-sockets.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qjsm.dir/quickjs-sockets.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/qjs-modules/quickjs-sockets.c > CMakeFiles/qjsm.dir/quickjs-sockets.c.i
+
+CMakeFiles/qjsm.dir/quickjs-sockets.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-sockets.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-sockets.c -o CMakeFiles/qjsm.dir/quickjs-sockets.c.s
+
+CMakeFiles/qjsm.dir/quickjs-stream.c.o: CMakeFiles/qjsm.dir/flags.make
+CMakeFiles/qjsm.dir/quickjs-stream.c.o: ../quickjs-stream.c
+CMakeFiles/qjsm.dir/quickjs-stream.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/qjsm.dir/quickjs-stream.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-stream.c.o -MF CMakeFiles/qjsm.dir/quickjs-stream.c.o.d -o CMakeFiles/qjsm.dir/quickjs-stream.c.o -c /workspace/qjs-modules/quickjs-stream.c
+
+CMakeFiles/qjsm.dir/quickjs-stream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qjsm.dir/quickjs-stream.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/qjs-modules/quickjs-stream.c > CMakeFiles/qjsm.dir/quickjs-stream.c.i
+
+CMakeFiles/qjsm.dir/quickjs-stream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qjsm.dir/quickjs-stream.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/qjs-modules/quickjs-stream.c -o CMakeFiles/qjsm.dir/quickjs-stream.c.s
+
 CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o: ../quickjs-syscallerror.c
 CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o -MF CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o.d -o CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o -c /workspace/qjs-modules/quickjs-syscallerror.c
 
 CMakeFiles/qjsm.dir/quickjs-syscallerror.c.i: cmake_force
@@ -282,7 +338,7 @@ CMakeFiles/qjsm.dir/quickjs-syscallerror.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-textcode.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-textcode.c.o: ../quickjs-textcode.c
 CMakeFiles/qjsm.dir/quickjs-textcode.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/qjsm.dir/quickjs-textcode.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/qjsm.dir/quickjs-textcode.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-textcode.c.o -MF CMakeFiles/qjsm.dir/quickjs-textcode.c.o.d -o CMakeFiles/qjsm.dir/quickjs-textcode.c.o -c /workspace/qjs-modules/quickjs-textcode.c
 
 CMakeFiles/qjsm.dir/quickjs-textcode.c.i: cmake_force
@@ -296,7 +352,7 @@ CMakeFiles/qjsm.dir/quickjs-textcode.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o: ../quickjs-tree-walker.c
 CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o -MF CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o.d -o CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o -c /workspace/qjs-modules/quickjs-tree-walker.c
 
 CMakeFiles/qjsm.dir/quickjs-tree-walker.c.i: cmake_force
@@ -310,7 +366,7 @@ CMakeFiles/qjsm.dir/quickjs-tree-walker.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-virtual.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-virtual.c.o: ../quickjs-virtual.c
 CMakeFiles/qjsm.dir/quickjs-virtual.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/qjsm.dir/quickjs-virtual.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/qjsm.dir/quickjs-virtual.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-virtual.c.o -MF CMakeFiles/qjsm.dir/quickjs-virtual.c.o.d -o CMakeFiles/qjsm.dir/quickjs-virtual.c.o -c /workspace/qjs-modules/quickjs-virtual.c
 
 CMakeFiles/qjsm.dir/quickjs-virtual.c.i: cmake_force
@@ -324,7 +380,7 @@ CMakeFiles/qjsm.dir/quickjs-virtual.c.s: cmake_force
 CMakeFiles/qjsm.dir/quickjs-xml.c.o: CMakeFiles/qjsm.dir/flags.make
 CMakeFiles/qjsm.dir/quickjs-xml.c.o: ../quickjs-xml.c
 CMakeFiles/qjsm.dir/quickjs-xml.c.o: CMakeFiles/qjsm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/qjsm.dir/quickjs-xml.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/qjsm.dir/quickjs-xml.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/qjsm.dir/quickjs-xml.c.o -MF CMakeFiles/qjsm.dir/quickjs-xml.c.o.d -o CMakeFiles/qjsm.dir/quickjs-xml.c.o -c /workspace/qjs-modules/quickjs-xml.c
 
 CMakeFiles/qjsm.dir/quickjs-xml.c.i: cmake_force
@@ -347,10 +403,14 @@ qjsm_OBJECTS = \
 "CMakeFiles/qjsm.dir/quickjs-lexer.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-location.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-misc.c.o" \
+"CMakeFiles/qjsm.dir/quickjs-mysql.c.o" \
+"CMakeFiles/qjsm.dir/quickjs-pgsql.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-path.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-pointer.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-predicate.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-repeater.c.o" \
+"CMakeFiles/qjsm.dir/quickjs-sockets.c.o" \
+"CMakeFiles/qjsm.dir/quickjs-stream.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-textcode.c.o" \
 "CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o" \
@@ -370,10 +430,14 @@ qjsm: CMakeFiles/qjsm.dir/quickjs-inspect.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-lexer.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-location.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-misc.c.o
+qjsm: CMakeFiles/qjsm.dir/quickjs-mysql.c.o
+qjsm: CMakeFiles/qjsm.dir/quickjs-pgsql.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-path.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-pointer.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-predicate.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-repeater.c.o
+qjsm: CMakeFiles/qjsm.dir/quickjs-sockets.c.o
+qjsm: CMakeFiles/qjsm.dir/quickjs-stream.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-syscallerror.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-textcode.c.o
 qjsm: CMakeFiles/qjsm.dir/quickjs-tree-walker.c.o
@@ -384,7 +448,7 @@ qjsm: libmodules.a
 qjsm: libcompiled.a
 qjsm: /usr/local/lib/libqjs.a
 qjsm: CMakeFiles/qjsm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable qjsm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/qjs-modules/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable qjsm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qjsm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

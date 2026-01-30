@@ -55,8 +55,8 @@ if(NOT DEFINED BUILTINS_COMPILED)
 endif(NOT DEFINED BUILTINS_COMPILED)
 
 if(NOT DEFINED BUILTINS_NATIVE)
-  set(BUILTINS_NATIVE arraybuffer-sink blob child-process deep directory inspect lexer location misc path pointer
-                      predicate repeater syscallerror textcode tree-walker virtual xml)
+  set(BUILTINS_NATIVE arraybuffer-sink blob child-process deep directory inspect lexer location misc mysql pgsql path pointer
+                      predicate repeater sockets stream syscallerror textcode tree-walker virtual xml)
 endif(NOT DEFINED BUILTINS_NATIVE)
 
 include(FindPkgConfig)
@@ -328,9 +328,9 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/incl
 link_directories(${QUICKJS_LIBRARY_DIR})
 
 # QuickJS-ng compatible modules (JS_NewClassID fixed)
-set(QUICKJS_MODULES arraybuffer-sink bjson blob deep directory internal json list location misc mmap path pointer predicate
+set(QUICKJS_MODULES arraybuffer-sink bjson blob deep directory internal json list location misc path pointer predicate
                     queue repeater textcode sockets stream syscallerror inspect tree-walker virtual xml)
-# Note: lexer excluded (needs libregexp integration), child-process will be added if POSIX available
+# Note: lexer/mysql/pgsql excluded for now, child-process/mmap added conditionally if available
 
 if(MODULE_MAGIC)
   list(APPEND QUICKJS_MODULES magic)
@@ -389,7 +389,6 @@ endif(MODULE_MAGIC)
 
 if(MODULE_MYSQL)
   include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/FindMariaDB.cmake)
-
   find_mariadb()
 endif(MODULE_MYSQL)
 
@@ -891,6 +890,7 @@ get_directory_property(CURRENT_LINK_DIRS LINK_DIRECTORIES)
 
 foreach(JS_MODULE ${QUICKJS_MODULES})
   file(GLOB MODULE_SOURCE quickjs-${JS_MODULE}.[ch])
+  message(STATUS "Processing module: ${JS_MODULE}")
   make_module(${JS_MODULE} ${MODULE_SOURCE})
 
   string(REGEX REPLACE "-" "_" QJSM_MODULE "${JS_MODULE}")

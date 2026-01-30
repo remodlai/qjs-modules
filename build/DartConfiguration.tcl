@@ -11,7 +11,7 @@ BuildDirectory: /workspace/qjs-modules/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: c4415477091c
+Site: b3ad55450f4b
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-cc

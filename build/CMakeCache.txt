@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Build archive library
+BUILD_LIBARCHIVE:BOOL=OFF
+
 //Build shared modules
 BUILD_SHARED_MODULES:BOOL=OFF
 
@@ -24,7 +27,7 @@ BUILD_TESTING:BOOL=ON
 BUILTINS_COMPILED:STRING=assert;console;events;fs;io;perf_hooks;process;repl;require;stack;tty;url;util
 
 //Native C modules to include in 'qjsm' binary
-BUILTINS_NATIVE:STRING=arraybuffer-sink;blob;child-process;deep;directory;inspect;lexer;location;misc;path;pointer;predicate;repeater;syscallerror;textcode;tree-walker;virtual;xml
+BUILTINS_NATIVE:STRING=arraybuffer-sink;blob;child-process;deep;directory;inspect;lexer;location;misc;mysql;pgsql;path;pointer;predicate;repeater;sockets;stream;syscallerror;textcode;tree-walker;virtual;xml
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -300,6 +303,24 @@ DO_TESTS:BOOL=ON
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
+//MariaDB client library
+LIBMARIADB_LIBRARY:STRING=/usr/lib/aarch64-linux-gnu/libmariadb.so
+
+//MariaDB library directory
+LIBMARIADB_LIBRARY_DIR:PATH=
+
+//PostgresSQL client include directory
+LIBPQ_INCLUDE_DIR:PATH=/usr/include/postgresql
+
+//PostgreSQL client library
+LIBPQ_LIBRARY:STRING=/usr/lib/aarch64-linux-gnu/libpq.so
+
+//libarchive include directory
+LibArchive_INCLUDE_DIR:PATH=LibArchive_INCLUDE_DIR-NOTFOUND
+
+//libarchive library
+LibArchive_LIBRARY:FILEPATH=LibArchive_LIBRARY-NOTFOUND
+
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
@@ -310,19 +331,19 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Build 'archive' module
-MODULE_ARCHIVE:BOOL=OFF
+MODULE_ARCHIVE:BOOL=ON
 
 //Build 'bcrypt' module
-MODULE_BCRYPT:BOOL=OFF
+MODULE_BCRYPT:BOOL=ON
 
 //Build 'magic' module
-MODULE_MAGIC:BOOL=OFF
+MODULE_MAGIC:BOOL=ON
 
 //Build 'mysql' module
-MODULE_MYSQL:BOOL=OFF
+MODULE_MYSQL:BOOL=ON
 
 //Build 'pgsql' module
-MODULE_PGSQL:BOOL=OFF
+MODULE_PGSQL:BOOL=ON
 
 //Build 'serial' module
 MODULE_SERIAL:BOOL=OFF
@@ -370,7 +391,7 @@ QUICKJS_LIBRARY_DIR:PATH=/usr/local/lib/aarch64-linux-gnu
 QUICKJS_MODULE_PATH:PATH=/usr/local/lib/aarch64-linux-gnu/aarch64-linux-gnu/quickjs;/usr/local/lib/aarch64-linux-gnu/quickjs;/usr/local/lib/quickjs
 
 //Name of the computer/site where compile is being run
-SITE:STRING=c4415477091c
+SITE:STRING=b3ad55450f4b
 
 //Use POSIX spawn()
 USE_SPAWN:BOOL=ON
@@ -671,8 +692,12 @@ HAVE_JS_STD_FILE:INTERNAL=
 HAVE_LCHOWN:INTERNAL=TRUE
 //Have include libbf.h
 HAVE_LIBBF_H:INTERNAL=
+//Have library magic
+HAVE_LIBMAGIC:INTERNAL=
 //Have library m
 HAVE_LIBMATH:INTERNAL=1
+//Define this if you have the 'libpq-fe.h' header file
+HAVE_LIBPQ_FE_H:INTERNAL=TRUE
 //Define this if you have the 'link' function
 HAVE_LINK:INTERNAL=TRUE
 //Define this if you have the 'linkat' function
@@ -699,12 +724,16 @@ HAVE_LINUX_X25_H:INTERNAL=TRUE
 HAVE_LSTAT:INTERNAL=TRUE
 //Define this if you have the 'lutimes' function
 HAVE_LUTIMES:INTERNAL=TRUE
+//Have include magic.h
+HAVE_MAGIC_H:INTERNAL=
 //Define this if you have the 'memmem' function
 HAVE_MEMMEM:INTERNAL=TRUE
 //Define this if you have the 'mkstemp' function
 HAVE_MKSTEMP:INTERNAL=TRUE
 //Define this if you have the 'mmap' function
 HAVE_MMAP:INTERNAL=TRUE
+//Have include mysql.h
+HAVE_MYSQL_H:INTERNAL=
 //Define this if you have the 'posix_spawnp' function
 HAVE_POSIX_SPAWNP:INTERNAL=TRUE
 //Define this if you have the 'pwd.h' header file
@@ -771,8 +800,88 @@ HAVE_WORDEXP_H:INTERNAL=TRUE
 HAVE__BUILTIN_MUL_OVERFLOW:INTERNAL=
 //Result of TRY_COMPILE
 HAVE__BUILTIN_MUL_OVERFLOW_COMPILED:INTERNAL=FALSE
+LIBPQ_CFLAGS:INTERNAL=-I/usr/include/postgresql
+LIBPQ_CFLAGS_I:INTERNAL=
+LIBPQ_CFLAGS_OTHER:INTERNAL=
+LIBPQ_FOUND:INTERNAL=1
+LIBPQ_INCLUDEDIR:INTERNAL=
+LIBPQ_INCLUDE_DIRS:INTERNAL=/usr/include/postgresql
+LIBPQ_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lpq
+LIBPQ_LDFLAGS_OTHER:INTERNAL=
+LIBPQ_LIBDIR:INTERNAL=
+LIBPQ_LIBRARIES:INTERNAL=pq
+LIBPQ_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+LIBPQ_LIBS:INTERNAL=
+LIBPQ_LIBS_L:INTERNAL=
+LIBPQ_LIBS_OTHER:INTERNAL=
+LIBPQ_LIBS_PATHS:INTERNAL=
+LIBPQ_MODULE_NAME:INTERNAL=libpq
+LIBPQ_PREFIX:INTERNAL=
+LIBPQ_STATIC_CFLAGS:INTERNAL=-I/usr/include/postgresql
+LIBPQ_STATIC_CFLAGS_I:INTERNAL=
+LIBPQ_STATIC_CFLAGS_OTHER:INTERNAL=
+LIBPQ_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/postgresql
+LIBPQ_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lpq;-lpgcommon;-lpgport;-lgssapi_krb5;-lm;-lldap;-lssl;-lcrypto;-ldl;-pthread
+LIBPQ_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+LIBPQ_STATIC_LIBDIR:INTERNAL=
+LIBPQ_STATIC_LIBRARIES:INTERNAL=pq;pgcommon;pgport;gssapi_krb5;m;ldap;ssl;crypto;dl
+LIBPQ_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+LIBPQ_STATIC_LIBS:INTERNAL=
+LIBPQ_STATIC_LIBS_L:INTERNAL=
+LIBPQ_STATIC_LIBS_OTHER:INTERNAL=
+LIBPQ_STATIC_LIBS_PATHS:INTERNAL=
+LIBPQ_VERSION:INTERNAL=14.20
+LIBPQ_libpq_INCLUDEDIR:INTERNAL=
+LIBPQ_libpq_LIBDIR:INTERNAL=
+LIBPQ_libpq_PREFIX:INTERNAL=
+LIBPQ_libpq_VERSION:INTERNAL=
+//ADVANCED property for variable: LibArchive_INCLUDE_DIR
+LibArchive_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LibArchive_LIBRARY
+LibArchive_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
+MARIADB_CFLAGS:INTERNAL=-I/usr/include/mariadb/
+MARIADB_CFLAGS_I:INTERNAL=
+MARIADB_CFLAGS_OTHER:INTERNAL=
+MARIADB_FOUND:INTERNAL=1
+MARIADB_INCLUDEDIR:INTERNAL=
+MARIADB_INCLUDE_DIRS:INTERNAL=/usr/include/mariadb/
+MARIADB_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu/;-lmariadb
+MARIADB_LDFLAGS_OTHER:INTERNAL=
+MARIADB_LIBDIR:INTERNAL=
+MARIADB_LIBRARIES:INTERNAL=mariadb
+MARIADB_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu/
+MARIADB_LIBS:INTERNAL=
+MARIADB_LIBS_L:INTERNAL=
+MARIADB_LIBS_OTHER:INTERNAL=
+MARIADB_LIBS_PATHS:INTERNAL=
+MARIADB_MODULE_NAME:INTERNAL=
+MARIADB_PREFIX:INTERNAL=
+MARIADB_STATIC_CFLAGS:INTERNAL=-I/usr/include/mariadb/
+MARIADB_STATIC_CFLAGS_I:INTERNAL=
+MARIADB_STATIC_CFLAGS_OTHER:INTERNAL=
+MARIADB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/mariadb/
+MARIADB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu/;-lmariadb;-lz;-ldl;-lm;-lssl;-lcrypto;-lmariadb;-lz;-ldl;-lm;-lssl;-lcrypto
+MARIADB_STATIC_LDFLAGS_OTHER:INTERNAL=
+MARIADB_STATIC_LIBDIR:INTERNAL=
+MARIADB_STATIC_LIBRARIES:INTERNAL=mariadb;z;dl;m;ssl;crypto;mariadb;z;dl;m;ssl;crypto
+MARIADB_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu/
+MARIADB_STATIC_LIBS:INTERNAL=
+MARIADB_STATIC_LIBS_L:INTERNAL=
+MARIADB_STATIC_LIBS_OTHER:INTERNAL=
+MARIADB_STATIC_LIBS_PATHS:INTERNAL=
+MARIADB_VERSION:INTERNAL=
+MARIADB_libmariadb_INCLUDEDIR:INTERNAL=/usr/include/mariadb/
+MARIADB_libmariadb_LIBDIR:INTERNAL=/usr/lib/aarch64-linux-gnu/
+MARIADB_libmariadb_MODULE_NAME:INTERNAL=libmariadb
+MARIADB_libmariadb_PREFIX:INTERNAL=/usr
+MARIADB_libmariadb_VERSION:INTERNAL=3.3.17
+MARIADB_mariadb_INCLUDEDIR:INTERNAL=/usr/include/mariadb/
+MARIADB_mariadb_LIBDIR:INTERNAL=/usr/lib/aarch64-linux-gnu/
+MARIADB_mariadb_MODULE_NAME:INTERNAL=mariadb
+MARIADB_mariadb_PREFIX:INTERNAL=/usr
+MARIADB_mariadb_VERSION:INTERNAL=3.3.17
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
@@ -899,4 +1008,9 @@ _WNO_UNUSED_FUNCTION:INTERNAL=1
 _WNO_UNUSED_PARAMETER:INTERNAL=1
 //Test _WNO_UNUSED_VARIABLE
 _WNO_UNUSED_VARIABLE:INTERNAL=1
+__pkg_config_arguments_LIBPQ:INTERNAL=libpq
+__pkg_config_arguments_MARIADB:INTERNAL=libmariadb;mariadb
+__pkg_config_checked_LIBPQ:INTERNAL=1
+__pkg_config_checked_MARIADB:INTERNAL=1
+prefix_result:INTERNAL=
 
