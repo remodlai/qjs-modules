@@ -443,7 +443,7 @@ static const JSCFunctionListEntry js_location_static_funcs[] = {
 
 int
 js_location_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_location_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_location_class_id);
 
   JS_NewClass(JS_GetRuntime(ctx), js_location_class_id, &js_location_class);
 

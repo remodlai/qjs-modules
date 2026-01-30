@@ -283,7 +283,7 @@ static const JSCFunctionListEntry js_blob_funcs[] = {
 
 int
 js_blob_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_blob_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_blob_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_blob_class_id, &js_blob_class);
 
   blob_ctor = JS_NewCFunction2(ctx, js_blob_constructor, "Blob", 1, JS_CFUNC_constructor, 0);

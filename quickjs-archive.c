@@ -1663,7 +1663,7 @@ js_archiveentry_set(JSContext* ctx, JSValueConst this_val, JSValueConst value, i
 
         archive_entry_copy_fflags_text(ent, str);
         JS_FreeCString(ctx, str);
-      } else if(JS_IsArray(ctx, value)) {
+      } else if(JS_IsArray(value) ) {
         JSValue arr[2] = {JS_GetPropertyUint32(ctx, value, 0), JS_GetPropertyUint32(ctx, value, 1)};
         uint32_t set = 0, clr = 0;
 
@@ -1972,7 +1972,7 @@ static const JSCFunctionListEntry js_archivematch_funcs[] = {
 
 int
 js_archive_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_archive_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_archive_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_archive_class_id, &js_archive_class);
 
   archive_ctor = JS_NewCFunction2(ctx, js_archive_constructor, "Archive", 1, JS_CFUNC_constructor, 0);
@@ -1982,7 +1982,7 @@ js_archive_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetPropertyFunctionList(ctx, archive_ctor, js_archive_static_funcs, countof(js_archive_static_funcs));
   JS_SetClassProto(ctx, js_archive_class_id, archive_proto);
 
-  JS_NewClassID(&js_archive_iterator_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_archive_iterator_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_archive_iterator_class_id, &js_archive_iterator_class);
 
   iterator_proto = JS_NewObject(ctx);
@@ -1990,7 +1990,7 @@ js_archive_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetPropertyFunctionList(ctx, iterator_proto, js_archive_iterator_funcs, countof(js_archive_iterator_funcs));
   JS_SetClassProto(ctx, js_archive_iterator_class_id, iterator_proto);
 
-  JS_NewClassID(&js_archiveentry_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_archiveentry_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_archiveentry_class_id, &js_archiveentry_class);
 
   entry_ctor = JS_NewCFunction2(ctx, js_archiveentry_constructor, "ArchiveEntry", 1, JS_CFUNC_constructor, 0);
@@ -2000,7 +2000,7 @@ js_archive_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_archiveentry_class_id, entry_proto);
   JS_SetConstructor(ctx, entry_ctor, entry_proto);
 
-  JS_NewClassID(&js_archivematch_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_archivematch_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_archivematch_class_id, &js_archivematch_class);
 
   match_ctor = JS_NewCFunction2(ctx, js_archivematch_constructor, "ArchiveMatch", 1, JS_CFUNC_constructor, 0);

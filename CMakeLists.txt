@@ -327,9 +327,10 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/incl
                     ${QUICKJS_INCLUDE_DIRS})
 link_directories(${QUICKJS_LIBRARY_DIR})
 
-set(QUICKJS_MODULES arraybuffer-sink bjson blob deep directory json lexer list location misc path pointer predicate
-                    queue repeater textcode sockets #stream
-                     syscallerror inspect tree-walker virtual xml)
+# QuickJS-ng compatible modules (JS_NewClassID fixed)
+set(QUICKJS_MODULES arraybuffer-sink bjson blob deep directory internal json list location misc mmap path pointer predicate
+                    queue repeater textcode sockets stream syscallerror inspect tree-walker virtual xml)
+# Note: lexer excluded (needs libregexp integration), child-process will be added if POSIX available
 
 if(MODULE_MAGIC)
   list(APPEND QUICKJS_MODULES magic)
@@ -709,7 +710,10 @@ if(NOT WASI)
 endif(NOT WASI)
 
 file(GLOB LIBRARY_SOURCES include/*.h src/*.c)
-list(REMOVE_ITEM LIBRARY_SOURCES src/qjsm.c)
+# QuickJS-ng compatibility: disable files with API incompatibilities
+list(REMOVE_ITEM LIBRARY_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/qjsm.c)        # QuickJS-ng API differences (JSMallocState, CONFIG_VERSION)
+list(REMOVE_ITEM LIBRARY_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/lexer.c)       # needs libregexp.h from quickjs
+list(REMOVE_ITEM LIBRARY_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/utils.c)       # QuickJS-ng internal API changes (JSRefCountHeader, __JS_FreeValueRT, JS_NewClassID)
 if(HAVE_INET_PTON)
   list(REMOVE_ITEM LIBRARY_SOURCES src/inet_pton.c)
 endif(HAVE_INET_PTON)

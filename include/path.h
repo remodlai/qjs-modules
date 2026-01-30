@@ -1,6 +1,7 @@
 #ifndef PATH_H
 #define PATH_H
 
+#include "defines.h"
 #include <ctype.h>
 #include <dirent.h>
 #include <fcntl.h>

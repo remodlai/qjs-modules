@@ -624,7 +624,7 @@ static const JSCFunctionListEntry js_serialerror_funcs[] = {
 
 int
 js_serial_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_serialport_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_serialport_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_serialport_class_id, &js_serialport_class);
 
   serialport_ctor = JS_NewObject(ctx);
@@ -643,7 +643,7 @@ js_serial_init(JSContext* ctx, JSModuleDef* m) {
   JSValue error_proto = JS_GetPrototype(ctx, error);
   JS_FreeValue(ctx, error);
 
-  JS_NewClassID(&js_serialerror_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_serialerror_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_serialerror_class_id, &js_serialerror_class);
 
   serialerror_ctor = JS_NewCFunction2(ctx, js_serialerror_constructor, "SerialError", 1, JS_CFUNC_constructor, 0);

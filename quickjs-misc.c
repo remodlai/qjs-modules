@@ -239,7 +239,7 @@ qjs_tempnam(const char* dir, const char* template) {
 
 #define ColorToBits(c) ((ColorIsBG(c) << 4) | (ColorIsBold(c) << 3) | ColorBlue(c) | ColorGreen(c) << 1 | ColorRed(c) << 2)
 
-BOOL JS_IsUncatchableError(JSContext* ctx, JSValueConst val);
+BOOL JS_IsUncatchableError(JSValueConst val);
 
 /**
  * \addtogroup quickjs-misc
@@ -1102,7 +1102,7 @@ js_misc_hrtime(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst arg
 
   clock_gettime(arg, &ts);
 
-  if(argc >= 1 && JS_IsArray(ctx, argv[0])) {
+  if(argc >= 1 && JS_IsArray(argv[0])) {
     uint64_t sec, nsec;
 
     sec = js_get_propertyint_int64(ctx, argv[0], 0);
@@ -1242,7 +1242,7 @@ js_misc_glob(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[
   if(argc >= 2)
     JS_ToInt32(ctx, &flags, argv[1]);
 
-  if((array_arg = (argc >= 4 && JS_IsArray(ctx, argv[3])))) {
+  if((array_arg = (argc >= 4 && JS_IsArray(argv[3])))) {
     ret = JS_DupValue(ctx, argv[3]);
 
 #ifdef GLOB_APPEND
@@ -1301,7 +1301,7 @@ js_misc_wordexp(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst ar
   if(argc >= 3)
     JS_ToInt32(ctx, &flags, argv[2]);
 
-  if((array_arg = (argc >= 2 && JS_IsArray(ctx, argv[1])))) {
+  if((array_arg = (argc >= 2 && JS_IsArray(argv[1])))) {
     ret = JS_DupValue(ctx, argv[1]);
 
     if(flags & WRDE_APPEND)
@@ -1457,12 +1457,12 @@ js_misc_screensize(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst
     JSValue width, height;
 
     if(JS_IsUndefined(ret))
-      ret = argc >= 1 && JS_IsArray(ctx, argv[0]) ? JS_DupValue(ctx, argv[0]) : JS_NewArray(ctx);
+      ret = argc >= 1 && JS_IsArray(argv[0]) ? JS_DupValue(ctx, argv[0]) : JS_NewArray(ctx);
 
     width = JS_NewInt32(ctx, size[0]);
     height = JS_NewInt32(ctx, size[1]);
 
-    if(JS_IsArray(ctx, ret)) {
+    if(JS_IsArray(ret)) {
       JS_SetPropertyUint32(ctx, ret, 0, width);
       JS_SetPropertyUint32(ctx, ret, 1, height);
     } else if(JS_IsObject(ret)) {
@@ -2313,7 +2313,7 @@ js_misc_bitfield(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst a
           JS_SetPropertyUint32(ctx, ret, j++, JS_NewInt32(ctx, value));
         }
 
-      } else if(argc >= 1 && JS_IsArray(ctx, argv[0])) {
+      } else if(argc >= 1 && JS_IsArray(argv[0])) {
         uint8_t* bufptr;
         size_t bufsize;
 
@@ -2367,7 +2367,7 @@ js_misc_bitfield(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst a
       if(argc >= 2)
         JS_ToInt64Ext(ctx, &offset, argv[1]);
 
-      if(!JS_IsArray(ctx, argv[0]))
+      if(!JS_IsArray(argv[0]))
         return JS_ThrowTypeError(ctx, "argument must be an array");
 
       prop = JS_GetPropertyUint32(ctx, argv[0], 0);
@@ -2796,7 +2796,7 @@ js_misc_is(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[],
   JSValueConst arg = argc >= 1 ? argv[0] : JS_UNDEFINED;
 
   switch(magic) {
-    case IS_ARRAY: r = JS_IsArray(ctx, arg); break;
+    case IS_ARRAY: r = JS_IsArray(arg); break;
 #ifdef CONFIG_BIGNUM
     case IS_BIGDECIMAL: r = JS_IsBigDecimal(arg); break;
     case IS_BIGFLOAT: r = JS_IsBigFloat(arg); break;
@@ -2815,7 +2815,7 @@ js_misc_is(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[],
       break;
     }
 
-    case IS_ERROR: r = JS_IsError(ctx, arg); break;
+    case IS_ERROR: r = JS_IsError(arg); break;
     case IS_EXCEPTION: r = JS_IsException(arg); break;
     case IS_EXTENSIBLE: r = JS_IsExtensible(ctx, arg); break;
     case IS_FUNCTION: r = JS_IsFunction(ctx, arg); break;
@@ -2831,7 +2831,7 @@ js_misc_is(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[],
     case IS_STRING: r = JS_IsString(arg); break;
     case IS_SYMBOL: r = JS_IsSymbol(arg); break;
 #ifdef HAVE_JS_ISUNCATCHABLEERROR
-    case IS_UNCATCHABLEERROR: r = JS_IsUncatchableError(ctx, arg); break;
+    case IS_UNCATCHABLEERROR: r = JS_IsUncatchableError(arg); break;
 #endif
     case IS_UNDEFINED: r = JS_IsUndefined(arg); break;
     case IS_UNINITIALIZED: r = JS_IsUninitialized(arg); break;
@@ -3249,7 +3249,7 @@ js_misc_utime(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv
     JS_ToInt32(ctx, &fd, argv[0]);
   }
 
-  if(!JS_IsArray(ctx, argv[1]))
+  if(!JS_IsArray(argv[1]))
     return JS_ThrowTypeError(ctx, "argument 2 must be an array");
 
   switch(magic) {

@@ -360,7 +360,7 @@ js_connectparams_from(JSContext* ctx, int argc, JSValueConst argv[]) {
   MYSQLConnectParameters* cp;
 
   if(js_connectparams_class_id == 0) {
-    JS_NewClassID(&js_connectparams_class_id);
+    JS_NewClassID(JS_GetRuntime(ctx), &js_connectparams_class_id);
     JS_NewClass(JS_GetRuntime(ctx), js_connectparams_class_id, &js_connectparams_class);
   }
 
@@ -2038,7 +2038,7 @@ string_to_object(JSContext* ctx, const char* ctor_name, const char* s) {
 
 int
 js_mysql_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_mysql_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_mysql_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_mysql_class_id, &js_mysql_class);
 
   mysql_ctor = JS_NewCFunction2(ctx, js_mysql_constructor, "MySQL", 1, JS_CFUNC_constructor, 0);
@@ -2054,7 +2054,7 @@ js_mysql_init(JSContext* ctx, JSModuleDef* m) {
   JSValue error_proto = JS_GetPrototype(ctx, error);
   JS_FreeValue(ctx, error);
 
-  JS_NewClassID(&js_mysqlerror_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_mysqlerror_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_mysqlerror_class_id, &js_mysqlerror_class);
 
   mysqlerror_ctor = JS_NewCFunction2(ctx, js_mysqlerror_constructor, "MySQLError", 1, JS_CFUNC_constructor, 0);
@@ -2065,7 +2065,7 @@ js_mysql_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_SetClassProto(ctx, js_mysqlerror_class_id, mysqlerror_proto);
 
-  JS_NewClassID(&js_mysqlresult_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_mysqlresult_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_mysqlresult_class_id, &js_mysqlresult_class);
 
   mysqlresult_ctor = JS_NewCFunction2(ctx, js_mysqlresult_constructor, "MySQLResult", 1, JS_CFUNC_constructor, 0);

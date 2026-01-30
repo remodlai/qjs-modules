@@ -515,7 +515,7 @@ static const JSCFunctionListEntry js_repeater_static_funcs[] = {
 
 static int
 js_repeater_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_repeater_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_repeater_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_repeater_class_id, &js_repeater_class);
 
   repeater_proto = JS_NewObject(ctx);

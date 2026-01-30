@@ -290,7 +290,7 @@ static const JSCFunctionListEntry js_queue_iterator_funcs[] = {
 
 int
 js_queue_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_queue_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_queue_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_queue_class_id, &js_queue_class);
 
   queue_ctor = JS_NewCFunction2(ctx, js_queue_constructor, "Queue", 1, JS_CFUNC_constructor, 0);
@@ -301,7 +301,7 @@ js_queue_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_queue_class_id, queue_proto);
   JS_SetConstructor(ctx, queue_ctor, queue_proto);
 
-  JS_NewClassID(&js_queue_iterator_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_queue_iterator_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_queue_iterator_class_id, &js_queue_iterator_class);
 
   queue_iterator_proto = JS_NewObject(ctx);

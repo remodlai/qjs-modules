@@ -1,6 +1,32 @@
 #ifndef DEFINES_H
 #define DEFINES_H
 
+#include <stdbool.h>
+#include <cutils.h>
+
+// QuickJS-ng compatibility
+#ifndef BOOL
+#define BOOL bool
+#endif
+#ifndef TRUE
+#define TRUE true
+#endif
+#ifndef FALSE
+#define FALSE false
+#endif
+
+// QuickJS-ng UTF8 API compatibility
+// Original QuickJS: unicode_from_utf8(buf, len, &next) → returns codepoint
+// QuickJS-ng: utf8_decode(buf, &next) → returns codepoint
+static inline int unicode_from_utf8(const void* buf, size_t len, const uint8_t** pp) {
+  (void)len; // unused in QuickJS-ng version
+  return (int)utf8_decode((const uint8_t*)buf, pp);
+}
+
+static inline size_t unicode_to_utf8(uint8_t* buf, uint32_t c) {
+  return utf8_encode(buf, c);
+}
+
 /**
  * \defgroup defines defines: Preprocessor definitions
  * @{

@@ -1023,7 +1023,7 @@ static const JSCFunctionListEntry js_predicate_types[] = {
 
 static int
 js_predicate_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_predicate_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_predicate_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_predicate_class_id, &js_predicate_class);
 
   predicate_proto = JS_NewObject(ctx);

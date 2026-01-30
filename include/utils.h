@@ -431,7 +431,7 @@ js_value_type_flag(JSValueConst value) {
 
 static inline ValueTypeFlag
 js_value_type_get(JSContext* ctx, JSValueConst value) {
-  if(JS_IsArray(ctx, value))
+  if(JS_IsArray(value))
     return FLAG_ARRAY;
 
   if(JS_IsFunction(ctx, value))
@@ -1063,7 +1063,7 @@ int64_t js_array_length(JSContext*, JSValueConst array);
 
 static inline BOOL
 js_is_array(JSContext* ctx, JSValueConst value) {
-  return JS_IsArray(ctx, value) || js_is_typedarray(ctx, value);
+  return JS_IsArray(value) || js_is_typedarray(ctx, value);
 }
 
 static inline BOOL

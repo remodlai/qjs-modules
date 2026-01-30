@@ -893,7 +893,7 @@ js_pointer_init(JSContext* ctx, JSModuleDef* m) {
 
   assert(JS_IsObject(reference_error));
 
-  JS_NewClassID(&js_dereferenceerror_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_dereferenceerror_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_dereferenceerror_class_id, &js_dereferenceerror_class);
 
   dereferenceerror_ctor = JS_NewCFunction2(ctx, js_dereferenceerror_constructor, "DereferenceError", 1, JS_CFUNC_constructor, 0);
@@ -906,7 +906,7 @@ js_pointer_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_dereferenceerror_class_id, dereferenceerror_proto);
   JS_SetConstructor(ctx, dereferenceerror_ctor, dereferenceerror_proto);
 
-  JS_NewClassID(&js_pointer_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_pointer_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_pointer_class_id, &js_pointer_class);
 
   JSValue array_proto = js_global_prototype(ctx, "Array");

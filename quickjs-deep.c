@@ -990,7 +990,7 @@ js_deep_clone(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv
   /*if(!predicate_callable(ctx, pred))
     return JS_ThrowTypeError(ctx, "argument 2 (predicate) is not a function");*/
 
-  JSValue ret = JS_IsArray(ctx, argv[0]) ? JS_NewArray(ctx) : JS_NewObject(ctx);
+  JSValue ret = JS_IsArray(argv[0]) ? JS_NewArray(ctx) : JS_NewObject(ctx);
   Vector frames = VECTOR(ctx);
   Vector stack = VECTOR(ctx);
   PropertyEnumeration* it = property_recursion_push(&frames, ctx, JS_DupValue(ctx, argv[0]), PROPENUM_DEFAULT_FLAGS);
@@ -1014,7 +1014,7 @@ js_deep_clone(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv
     JSValue prop = JS_UNDEFINED;
 
     if((r & YIELD)) {
-      prop = JS_IsObject(value) ? (JS_IsArray(ctx, value) ? JS_NewArray(ctx) : JS_NewObject(ctx)) : js_value_clone(ctx, value);
+      prop = JS_IsObject(value) ? (JS_IsArray(value)  ? JS_NewArray(ctx) : JS_NewObject(ctx)) : js_value_clone(ctx, value);
 
       JS_SetProperty(ctx, *(JSValue*)vector_back(&stack, sizeof(JSValue)), property_enumeration_atom(it), prop);
     }
@@ -1112,7 +1112,7 @@ static const JSCFunctionListEntry js_deep_iterator_proto_funcs[] = {
 
 static int
 js_deep_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_deep_iterator_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_deep_iterator_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_deep_iterator_class_id, &js_deep_iterator_class);
 
   JSValue generator_proto = js_generator_prototype(ctx);

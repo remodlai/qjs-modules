@@ -1726,7 +1726,7 @@ static JSClassDef js_node_class = {
 
 static int
 js_list_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_list_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_list_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_list_class_id, &js_list_class);
 
   list_proto = JS_NewObjectProto(ctx, JS_NULL);
@@ -1756,7 +1756,7 @@ js_list_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_FreeValue(ctx, array_proto);
 
-  JS_NewClassID(&js_list_iterator_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_list_iterator_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_list_iterator_class_id, &js_list_iterator_class);
 
   list_iterator_proto = JS_NewObjectProto(ctx, JS_NULL);
@@ -1768,7 +1768,7 @@ js_list_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_SetConstructor(ctx, list_iterator_ctor, list_iterator_proto);
 
-  JS_NewClassID(&js_node_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_node_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_node_class_id, &js_node_class);
 
   node_proto = JS_NewObjectProto(ctx, JS_NULL);

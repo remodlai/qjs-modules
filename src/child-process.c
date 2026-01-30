@@ -18,6 +18,7 @@
 #include <windows.h>
 #include <io.h>
 #else
+#include <signal.h>
 #ifdef POSIX_SPAWN
 #include <spawn.h>
 #else

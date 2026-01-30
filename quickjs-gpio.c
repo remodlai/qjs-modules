@@ -196,7 +196,7 @@ static const JSCFunctionListEntry js_gpio_static_funcs[] = {
 
 int
 js_gpio_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_gpio_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_gpio_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_gpio_class_id, &js_gpio_class);
 
   gpio_ctor = JS_NewCFunction2(ctx, js_gpio_constructor, "GPIO", 1, JS_CFUNC_constructor, 0);

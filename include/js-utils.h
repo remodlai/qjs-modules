@@ -1,6 +1,7 @@
 #ifndef JS_UTILS_H
 #define JS_UTILS_H
 
+#include "defines.h"
 #include <quickjs.h>
 #include <cutils.h>
 

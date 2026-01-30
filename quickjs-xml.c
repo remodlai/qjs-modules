@@ -192,7 +192,7 @@ xml_num_children(JSContext* ctx, JSValueConst element) {
   int64_t num_children = -1;
   JSValue children = JS_GetPropertyStr(ctx, element, "children");
 
-  if(JS_IsArray(ctx, children))
+  if(JS_IsArray(children))
     num_children = js_array_length(ctx, children);
 
   JS_FreeValue(ctx, children);
@@ -732,7 +732,7 @@ js_xml_read(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[]
       if(js_has_propertystr(ctx, argv[2], "selfClosingTags"))
         tags = JS_GetPropertyStr(ctx, argv[2], "selfClosingTags");
 
-      if(JS_IsArray(ctx, tags)) {
+      if(JS_IsArray(tags)) {
         size_t ac;
         opts.self_closing_tags = (const char* const*)js_array_to_argv(ctx, &ac, tags);
       }
@@ -770,7 +770,7 @@ js_xml_write_tree(JSContext* ctx, JSValueConst obj, int max_depth, DynBuf* outpu
 
     if(JS_IsString(value)) {
       xml_write_text(ctx, value, output, depth, it->tab_atom_len > 1);
-    } else if(JS_IsObject(value) && !JS_IsArray(ctx, value)) {
+    } else if(JS_IsObject(value) && !JS_IsArray(value) ) {
       int32_t num_children = xml_num_children(ctx, value);
 
       xml_write_element(ctx, value, output, depth, num_children <= 0);
@@ -814,7 +814,7 @@ js_xml_write_list(JSContext* ctx, JSValueConst obj, size_t len, DynBuf* output) 
       single_line = newlines == 0;
 
       xml_write_text(ctx, value, output, depth, !single_line);
-    } else if(JS_IsObject(value) && !JS_IsArray(ctx, value)) {
+    } else if(JS_IsObject(value) && !JS_IsArray(value) ) {
       const char* tag;
 
       if((tag = js_get_propertystr_cstring(ctx, value, "tagName"))) {
@@ -857,7 +857,7 @@ js_xml_write(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[
   if(argc >= 2)
     JS_ToInt32(ctx, &max_depth, argv[1]);
 
-  if(!JS_IsArray(ctx, obj)) {
+  if(!JS_IsArray(obj)) {
     arr = JS_NewArray(ctx);
     JS_SetPropertyUint32(ctx, arr, 0, JS_DupValue(ctx, obj));
     obj = arr;
@@ -869,7 +869,7 @@ js_xml_write(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[
   if(JS_IsObject(last)) {
     children = JS_GetPropertyStr(ctx, last, "children");
 
-    if(JS_IsArray(ctx, children))
+    if(JS_IsArray(children))
       flat = FALSE;
   }
 

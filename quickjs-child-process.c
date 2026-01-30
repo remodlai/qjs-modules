@@ -115,7 +115,7 @@ js_child_process_options(JSContext* ctx, ChildProcess* cp, JSValueConst obj) {
   if(JS_IsException(value) || JS_IsUndefined(value))
     value = JS_NewString(ctx, "pipe");
 
-  if(!JS_IsArray(ctx, value)) {
+  if(!JS_IsArray(value) ) {
     JSValue a = JS_NewArray(ctx);
     JS_SetPropertyUint32(ctx, a, 0, JS_DupValue(ctx, value));
     JS_SetPropertyUint32(ctx, a, 1, JS_DupValue(ctx, value));
@@ -192,7 +192,7 @@ js_child_process_spawn(JSContext* ctx, JSValueConst this_val, int argc, JSValueC
 
   ret = js_child_process_wrap(ctx, cp);
 
-  if(JS_IsArray(ctx, argv[0])) {
+  if(JS_IsArray(argv[0])) {
     cp->args = js_array_to_argv(ctx, NULL, argv[0]);
 
     if(cp->args[0])
@@ -562,7 +562,7 @@ static const JSCFunctionListEntry js_child_process_funcs[] = {
 
 static int
 js_child_process_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_child_process_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_child_process_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_child_process_class_id, &js_child_process_class);
 
   child_process_proto = JS_NewObject(ctx);

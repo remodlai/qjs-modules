@@ -1,0 +1,1391 @@
+The system is: Linux - 6.12.54-linuxkit - aarch64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/workspace/qjs-modules/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+cc (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7bc15/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7bc15.dir/build.make CMakeFiles/cmTC_7bc15.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/'
+ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7bc15.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cclOe7d9.s
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/aarch64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/aarch64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0159626df870edcc607c5281685617fb
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/'
+ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o /tmp/cclOe7d9.s
+GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_7bc15
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bc15.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -o cmTC_7bc15 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7bc15' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7bc15.'
+ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwlDHdr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_7bc15 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7bc15' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7bc15.'
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/aarch64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/11/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/11/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7bc15/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7bc15.dir/build.make CMakeFiles/cmTC_7bc15.dir/build]
+  ignore line: [gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/']
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7bc15.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cclOe7d9.s]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/aarch64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0159626df870edcc607c5281685617fb]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/']
+  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o /tmp/cclOe7d9.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_7bc15]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bc15.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -o cmTC_7bc15 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7bc15' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7bc15.']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwlDHdr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_7bc15 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwlDHdr.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7bc15] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_7bc15.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11] ==> [/usr/lib/gcc/aarch64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/11;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file quickjs.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6d62d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d62d.dir/build.make CMakeFiles/cmTC_6d62d.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d62d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6d62d.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6d62d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d62d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6d62d.dir/CheckIncludeFile.c.o -o cmTC_6d62d 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file quickjs-config.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_61cd4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61cd4.dir/build.make CMakeFiles/cmTC_61cd4.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61cd4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_61cd4.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_61cd4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61cd4.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_61cd4.dir/CheckIncludeFile.c.o -o cmTC_61cd4 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function atan2 exists in the m passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_851ff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_851ff.dir/build.make CMakeFiles/cmTC_851ff.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_851ff.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atan2 -o CMakeFiles/cmTC_851ff.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function 'atan2'; expected 'double(double,  double)' [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: 'atan2' is declared in header '<math.h>'
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_851ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_851ff.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atan2 CMakeFiles/cmTC_851ff.dir/CheckFunctionExists.c.o -o cmTC_851ff  -lm /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function vfork exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8fe72/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8fe72.dir/build.make CMakeFiles/cmTC_8fe72.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fe72.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vfork -o CMakeFiles/cmTC_8fe72.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8fe72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fe72.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vfork CMakeFiles/cmTC_8fe72.dir/CheckFunctionExists.c.o -o cmTC_8fe72  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5eb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d5eb3.dir/build.make CMakeFiles/cmTC_d5eb3.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5eb3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fork -o CMakeFiles/cmTC_d5eb3.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function 'fork'; expected 'int(void)' [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_d5eb3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5eb3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fork CMakeFiles/cmTC_d5eb3.dir/CheckFunctionExists.c.o -o cmTC_d5eb3  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function waitpid exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d05f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d05f4.dir/build.make CMakeFiles/cmTC_d05f4.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d05f4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=waitpid -o CMakeFiles/cmTC_d05f4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d05f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d05f4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=waitpid CMakeFiles/cmTC_d05f4.dir/CheckFunctionExists.c.o -o cmTC_d05f4  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function execvpe exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a4c2f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a4c2f.dir/build.make CMakeFiles/cmTC_a4c2f.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4c2f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=execvpe -o CMakeFiles/cmTC_a4c2f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a4c2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4c2f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=execvpe CMakeFiles/cmTC_a4c2f.dir/CheckFunctionExists.c.o -o cmTC_a4c2f  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function setsid exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e015/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e015.dir/build.make CMakeFiles/cmTC_5e015.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e015.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setsid -o CMakeFiles/cmTC_5e015.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5e015
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e015.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setsid CMakeFiles/cmTC_5e015.dir/CheckFunctionExists.c.o -o cmTC_5e015  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function execve exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1e947/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1e947.dir/build.make CMakeFiles/cmTC_1e947.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e947.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=execve -o CMakeFiles/cmTC_1e947.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function 'execve'; expected 'int(const char *, char * const*, char * const*)' [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_1e947
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e947.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=execve CMakeFiles/cmTC_1e947.dir/CheckFunctionExists.c.o -o cmTC_1e947  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f7708/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f7708.dir/build.make CMakeFiles/cmTC_f7708.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7708.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f7708.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f7708
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7708.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_f7708.dir/CheckIncludeFile.c.o -o cmTC_f7708 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/syscall.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0972e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0972e.dir/build.make CMakeFiles/cmTC_0972e.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0972e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0972e.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0972e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0972e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_0972e.dir/CheckIncludeFile.c.o -o cmTC_0972e 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file spawn.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e1f77/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1f77.dir/build.make CMakeFiles/cmTC_e1f77.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1f77.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e1f77.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e1f77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1f77.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e1f77.dir/CheckIncludeFile.c.o -o cmTC_e1f77 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function posix_spawnp exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9fede/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9fede.dir/build.make CMakeFiles/cmTC_9fede.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9fede.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=posix_spawnp -o CMakeFiles/cmTC_9fede.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9fede
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fede.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=posix_spawnp CMakeFiles/cmTC_9fede.dir/CheckFunctionExists.c.o -o cmTC_9fede  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/x25.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58276/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58276.dir/build.make CMakeFiles/cmTC_58276.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58276.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_58276.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_58276
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58276.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_58276.dir/CheckIncludeFile.c.o -o cmTC_58276 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/can.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd558/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fd558.dir/build.make CMakeFiles/cmTC_fd558.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd558.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fd558.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fd558
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd558.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_fd558.dir/CheckIncludeFile.c.o -o cmTC_fd558 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/nfc.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_43995/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_43995.dir/build.make CMakeFiles/cmTC_43995.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43995.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_43995.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_43995
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43995.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_43995.dir/CheckIncludeFile.c.o -o cmTC_43995 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/ax25.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47c05/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47c05.dir/build.make CMakeFiles/cmTC_47c05.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47c05.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_47c05.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_47c05
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47c05.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_47c05.dir/CheckIncludeFile.c.o -o cmTC_47c05 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/netlink.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa2ea/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa2ea.dir/build.make CMakeFiles/cmTC_fa2ea.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa2ea.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fa2ea.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fa2ea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2ea.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_fa2ea.dir/CheckIncludeFile.c.o -o cmTC_fa2ea 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/atalk.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_766c7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_766c7.dir/build.make CMakeFiles/cmTC_766c7.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_766c7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_766c7.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_766c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_766c7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_766c7.dir/CheckIncludeFile.c.o -o cmTC_766c7 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file linux/if_alg.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7760d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7760d.dir/build.make CMakeFiles/cmTC_7760d.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7760d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7760d.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7760d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7760d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_7760d.dir/CheckIncludeFile.c.o -o cmTC_7760d 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file threads.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_561e7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_561e7.dir/build.make CMakeFiles/cmTC_561e7.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_561e7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_561e7.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_561e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_561e7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_561e7.dir/CheckIncludeFile.c.o -o cmTC_561e7 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a152a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a152a.dir/build.make CMakeFiles/cmTC_a152a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a152a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a152a.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a152a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a152a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a152a.dir/CheckIncludeFile.c.o -o cmTC_a152a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25d90/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25d90.dir/build.make CMakeFiles/cmTC_25d90.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25d90.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -o CMakeFiles/cmTC_25d90.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_25d90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25d90.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap CMakeFiles/cmTC_25d90.dir/CheckFunctionExists.c.o -o cmTC_25d90  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6682f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6682f.dir/build.make CMakeFiles/cmTC_6682f.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6682f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6682f.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6682f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6682f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6682f.dir/CheckIncludeFile.c.o -o cmTC_6682f 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d745d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d745d.dir/build.make CMakeFiles/cmTC_d745d.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d745d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d745d.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d745d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d745d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d745d.dir/CheckIncludeFile.c.o -o cmTC_d745d 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86a97/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86a97.dir/build.make CMakeFiles/cmTC_86a97.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86a97.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_86a97.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_86a97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86a97.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_86a97.dir/CheckIncludeFile.c.o -o cmTC_86a97 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_661c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_661c4.dir/build.make CMakeFiles/cmTC_661c4.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_661c4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_661c4.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_661c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_661c4.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_661c4.dir/CheckIncludeFile.c.o -o cmTC_661c4 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce9f0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce9f0.dir/build.make CMakeFiles/cmTC_ce9f0.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce9f0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ce9f0.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ce9f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce9f0.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ce9f0.dir/CheckIncludeFile.c.o -o cmTC_ce9f0 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e36ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e36ad.dir/build.make CMakeFiles/cmTC_e36ad.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e36ad.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e36ad.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e36ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e36ad.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e36ad.dir/CheckIncludeFile.c.o -o cmTC_e36ad 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_63a50/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_63a50.dir/build.make CMakeFiles/cmTC_63a50.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63a50.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpwuid -o CMakeFiles/cmTC_63a50.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63a50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63a50.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpwuid CMakeFiles/cmTC_63a50.dir/CheckFunctionExists.c.o -o cmTC_63a50  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getpwnam exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eef83/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eef83.dir/build.make CMakeFiles/cmTC_eef83.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eef83.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpwnam -o CMakeFiles/cmTC_eef83.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eef83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eef83.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpwnam CMakeFiles/cmTC_eef83.dir/CheckFunctionExists.c.o -o cmTC_eef83  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file termios.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a4cf7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a4cf7.dir/build.make CMakeFiles/cmTC_a4cf7.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4cf7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a4cf7.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a4cf7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4cf7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a4cf7.dir/CheckIncludeFile.c.o -o cmTC_a4cf7 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function ioctl exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2d8ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2d8ba.dir/build.make CMakeFiles/cmTC_2d8ba.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d8ba.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ioctl -o CMakeFiles/cmTC_2d8ba.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2d8ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8ba.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ioctl CMakeFiles/cmTC_2d8ba.dir/CheckFunctionExists.c.o -o cmTC_2d8ba  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function realpath exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3fe26/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3fe26.dir/build.make CMakeFiles/cmTC_3fe26.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fe26.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realpath -o CMakeFiles/cmTC_3fe26.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3fe26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fe26.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=realpath CMakeFiles/cmTC_3fe26.dir/CheckFunctionExists.c.o -o cmTC_3fe26  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function link exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2258b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2258b.dir/build.make CMakeFiles/cmTC_2258b.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2258b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=link -o CMakeFiles/cmTC_2258b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2258b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2258b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=link CMakeFiles/cmTC_2258b.dir/CheckFunctionExists.c.o -o cmTC_2258b  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function linkat exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1f2a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b1f2a.dir/build.make CMakeFiles/cmTC_b1f2a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1f2a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=linkat -o CMakeFiles/cmTC_b1f2a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b1f2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1f2a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=linkat CMakeFiles/cmTC_b1f2a.dir/CheckFunctionExists.c.o -o cmTC_b1f2a  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function symlink exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_936b8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_936b8.dir/build.make CMakeFiles/cmTC_936b8.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_936b8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=symlink -o CMakeFiles/cmTC_936b8.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_936b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_936b8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=symlink CMakeFiles/cmTC_936b8.dir/CheckFunctionExists.c.o -o cmTC_936b8  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function symlinkat exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf225/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf225.dir/build.make CMakeFiles/cmTC_cf225.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf225.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=symlinkat -o CMakeFiles/cmTC_cf225.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf225
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf225.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=symlinkat CMakeFiles/cmTC_cf225.dir/CheckFunctionExists.c.o -o cmTC_cf225  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strverscmp exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6329f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6329f.dir/build.make CMakeFiles/cmTC_6329f.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6329f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strverscmp -o CMakeFiles/cmTC_6329f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6329f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6329f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strverscmp CMakeFiles/cmTC_6329f.dir/CheckFunctionExists.c.o -o cmTC_6329f  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function memmem exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10ee7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10ee7.dir/build.make CMakeFiles/cmTC_10ee7.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10ee7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmem -o CMakeFiles/cmTC_10ee7.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10ee7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10ee7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memmem CMakeFiles/cmTC_10ee7.dir/CheckFunctionExists.c.o -o cmTC_10ee7  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fmemopen exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad268/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad268.dir/build.make CMakeFiles/cmTC_ad268.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad268.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fmemopen -o CMakeFiles/cmTC_ad268.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ad268
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad268.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fmemopen CMakeFiles/cmTC_ad268.dir/CheckFunctionExists.c.o -o cmTC_ad268  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1740a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1740a.dir/build.make CMakeFiles/cmTC_1740a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1740a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fcntl -o CMakeFiles/cmTC_1740a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1740a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1740a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fcntl CMakeFiles/cmTC_1740a.dir/CheckFunctionExists.c.o -o cmTC_1740a  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function wordexp exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e5de/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e5de.dir/build.make CMakeFiles/cmTC_0e5de.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e5de.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=wordexp -o CMakeFiles/cmTC_0e5de.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e5de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e5de.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=wordexp CMakeFiles/cmTC_0e5de.dir/CheckFunctionExists.c.o -o cmTC_0e5de  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inotify_init1 exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_84e61/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_84e61.dir/build.make CMakeFiles/cmTC_84e61.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84e61.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=inotify_init1 -o CMakeFiles/cmTC_84e61.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84e61
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84e61.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=inotify_init1 CMakeFiles/cmTC_84e61.dir/CheckFunctionExists.c.o -o cmTC_84e61  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2517a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2517a.dir/build.make CMakeFiles/cmTC_2517a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2517a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2517a.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2517a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2517a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2517a.dir/CheckIncludeFile.c.o -o cmTC_2517a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file alloca.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_43092/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_43092.dir/build.make CMakeFiles/cmTC_43092.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43092.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_43092.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_43092
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43092.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_43092.dir/CheckIncludeFile.c.o -o cmTC_43092 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file wordexp.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3bf0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3bf0.dir/build.make CMakeFiles/cmTC_c3bf0.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3bf0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c3bf0.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c3bf0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3bf0.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c3bf0.dir/CheckIncludeFile.c.o -o cmTC_c3bf0 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/inotify.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2266e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2266e.dir/build.make CMakeFiles/cmTC_2266e.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2266e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2266e.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2266e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2266e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2266e.dir/CheckIncludeFile.c.o -o cmTC_2266e 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function lstat exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6acd9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6acd9.dir/build.make CMakeFiles/cmTC_6acd9.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6acd9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lstat -o CMakeFiles/cmTC_6acd9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6acd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6acd9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lstat CMakeFiles/cmTC_6acd9.dir/CheckFunctionExists.c.o -o cmTC_6acd9  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fstat exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9e62/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9e62.dir/build.make CMakeFiles/cmTC_b9e62.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9e62.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fstat -o CMakeFiles/cmTC_b9e62.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9e62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9e62.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fstat CMakeFiles/cmTC_b9e62.dir/CheckFunctionExists.c.o -o cmTC_b9e62  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function access exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3d988/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3d988.dir/build.make CMakeFiles/cmTC_3d988.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3d988.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=access -o CMakeFiles/cmTC_3d988.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3d988
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d988.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=access CMakeFiles/cmTC_3d988.dir/CheckFunctionExists.c.o -o cmTC_3d988  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fnmatch exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9309/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9309.dir/build.make CMakeFiles/cmTC_b9309.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9309.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fnmatch -o CMakeFiles/cmTC_b9309.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9309.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fnmatch CMakeFiles/cmTC_b9309.dir/CheckFunctionExists.c.o -o cmTC_b9309  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function daemon exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6204c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6204c.dir/build.make CMakeFiles/cmTC_6204c.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6204c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=daemon -o CMakeFiles/cmTC_6204c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6204c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6204c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=daemon CMakeFiles/cmTC_6204c.dir/CheckFunctionExists.c.o -o cmTC_6204c  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function chmod exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1fe31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1fe31.dir/build.make CMakeFiles/cmTC_1fe31.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fe31.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=chmod -o CMakeFiles/cmTC_1fe31.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1fe31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fe31.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=chmod CMakeFiles/cmTC_1fe31.dir/CheckFunctionExists.c.o -o cmTC_1fe31  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fchmod exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2408c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2408c.dir/build.make CMakeFiles/cmTC_2408c.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2408c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fchmod -o CMakeFiles/cmTC_2408c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2408c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2408c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fchmod CMakeFiles/cmTC_2408c.dir/CheckFunctionExists.c.o -o cmTC_2408c  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function chown exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_11966/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11966.dir/build.make CMakeFiles/cmTC_11966.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11966.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=chown -o CMakeFiles/cmTC_11966.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_11966
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11966.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=chown CMakeFiles/cmTC_11966.dir/CheckFunctionExists.c.o -o cmTC_11966  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fchown exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6383d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6383d.dir/build.make CMakeFiles/cmTC_6383d.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6383d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fchown -o CMakeFiles/cmTC_6383d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6383d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6383d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fchown CMakeFiles/cmTC_6383d.dir/CheckFunctionExists.c.o -o cmTC_6383d  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function lchown exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7b06/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e7b06.dir/build.make CMakeFiles/cmTC_e7b06.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7b06.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lchown -o CMakeFiles/cmTC_e7b06.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e7b06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7b06.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lchown CMakeFiles/cmTC_e7b06.dir/CheckFunctionExists.c.o -o cmTC_e7b06  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fsync exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0f3d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f3d2.dir/build.make CMakeFiles/cmTC_0f3d2.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f3d2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fsync -o CMakeFiles/cmTC_0f3d2.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0f3d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f3d2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fsync CMakeFiles/cmTC_0f3d2.dir/CheckFunctionExists.c.o -o cmTC_0f3d2  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fdatasync exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9663/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9663.dir/build.make CMakeFiles/cmTC_b9663.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9663.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fdatasync -o CMakeFiles/cmTC_b9663.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9663
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9663.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fdatasync CMakeFiles/cmTC_b9663.dir/CheckFunctionExists.c.o -o cmTC_b9663  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function truncate exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_84919/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_84919.dir/build.make CMakeFiles/cmTC_84919.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84919.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=truncate -o CMakeFiles/cmTC_84919.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84919
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84919.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=truncate CMakeFiles/cmTC_84919.dir/CheckFunctionExists.c.o -o cmTC_84919  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function ftruncate exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66d82/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66d82.dir/build.make CMakeFiles/cmTC_66d82.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66d82.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ftruncate -o CMakeFiles/cmTC_66d82.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_66d82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66d82.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ftruncate CMakeFiles/cmTC_66d82.dir/CheckFunctionExists.c.o -o cmTC_66d82  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function utime exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5b89c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b89c.dir/build.make CMakeFiles/cmTC_5b89c.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b89c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=utime -o CMakeFiles/cmTC_5b89c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5b89c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b89c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=utime CMakeFiles/cmTC_5b89c.dir/CheckFunctionExists.c.o -o cmTC_5b89c  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function utimes exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5262a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5262a.dir/build.make CMakeFiles/cmTC_5262a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5262a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=utimes -o CMakeFiles/cmTC_5262a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5262a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5262a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=utimes CMakeFiles/cmTC_5262a.dir/CheckFunctionExists.c.o -o cmTC_5262a  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function futimes exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9fce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9fce.dir/build.make CMakeFiles/cmTC_d9fce.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9fce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=futimes -o CMakeFiles/cmTC_d9fce.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d9fce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9fce.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=futimes CMakeFiles/cmTC_d9fce.dir/CheckFunctionExists.c.o -o cmTC_d9fce  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function lutimes exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ac169/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ac169.dir/build.make CMakeFiles/cmTC_ac169.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac169.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lutimes -o CMakeFiles/cmTC_ac169.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ac169
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac169.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lutimes CMakeFiles/cmTC_ac169.dir/CheckFunctionExists.c.o -o cmTC_ac169  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c571/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c571.dir/build.make CMakeFiles/cmTC_1c571.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c571.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1c571.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1c571
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c571.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1c571.dir/CheckIncludeFile.c.o -o cmTC_1c571 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4dea3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4dea3.dir/build.make CMakeFiles/cmTC_4dea3.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dea3.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4dea3.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4dea3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dea3.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_4dea3.dir/CheckIncludeFile.c.o -o cmTC_4dea3 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14a42/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14a42.dir/build.make CMakeFiles/cmTC_14a42.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14a42.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_14a42.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_14a42
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14a42.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_14a42.dir/CheckIncludeFile.c.o -o cmTC_14a42 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/sysinfo.h exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d777b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d777b.dir/build.make CMakeFiles/cmTC_d777b.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d777b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d777b.dir/CheckIncludeFile.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d777b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d777b.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d777b.dir/CheckIncludeFile.c.o -o cmTC_d777b 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sysinfo exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_edbb7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_edbb7.dir/build.make CMakeFiles/cmTC_edbb7.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edbb7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sysinfo -o CMakeFiles/cmTC_edbb7.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_edbb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edbb7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sysinfo CMakeFiles/cmTC_edbb7.dir/CheckFunctionExists.c.o -o cmTC_edbb7  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gettid exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93cdb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93cdb.dir/build.make CMakeFiles/cmTC_93cdb.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93cdb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettid -o CMakeFiles/cmTC_93cdb.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_93cdb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93cdb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettid CMakeFiles/cmTC_93cdb.dir/CheckFunctionExists.c.o -o cmTC_93cdb  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function uname exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a4926/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a4926.dir/build.make CMakeFiles/cmTC_a4926.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4926.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=uname -o CMakeFiles/cmTC_a4926.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a4926
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4926.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=uname CMakeFiles/cmTC_a4926.dir/CheckFunctionExists.c.o -o cmTC_a4926  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function tempnam exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_015b1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_015b1.dir/build.make CMakeFiles/cmTC_015b1.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_015b1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tempnam -o CMakeFiles/cmTC_015b1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_015b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_015b1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=tempnam CMakeFiles/cmTC_015b1.dir/CheckFunctionExists.c.o -o cmTC_015b1  /usr/local/lib/libqjs.a 
+/usr/bin/ld: CMakeFiles/cmTC_015b1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a67d4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a67d4.dir/build.make CMakeFiles/cmTC_a67d4.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a67d4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp -o CMakeFiles/cmTC_a67d4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a67d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a67d4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mkstemp CMakeFiles/cmTC_a67d4.dir/CheckFunctionExists.c.o -o cmTC_a67d4  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inet_pton exists passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7f28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7f28.dir/build.make CMakeFiles/cmTC_b7f28.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7f28.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=inet_pton -o CMakeFiles/cmTC_b7f28.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b7f28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7f28.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=inet_pton CMakeFiles/cmTC_b7f28.dir/CheckFunctionExists.c.o -o cmTC_b7f28  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function dbuf_claim exists in the /usr/local/lib/libqjs.a passed with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d6eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d6eb.dir/build.make CMakeFiles/cmTC_7d6eb.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d6eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dbuf_claim -o CMakeFiles/cmTC_7d6eb.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7d6eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d6eb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dbuf_claim CMakeFiles/cmTC_7d6eb.dir/CheckFunctionExists.c.o -o cmTC_7d6eb   -L/usr/local/lib/aarch64-linux-gnu  -Wl,-rpath,/usr/local/lib/aarch64-linux-gnu /usr/local/lib/libqjs.a /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c90e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c90e2.dir/build.make CMakeFiles/cmTC_c90e2.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c90e2.dir/src.c.o
+/usr/bin/cc -DVISIBILITY_HIDDEN  -fvisibility=hidden -o CMakeFiles/cmTC_c90e2.dir/src.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c90e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c90e2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c90e2.dir/src.c.o -o cmTC_c90e2  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test _WALL succeeded with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0480a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0480a.dir/build.make CMakeFiles/cmTC_0480a.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0480a.dir/src.c.o
+/usr/bin/cc -D_WALL  -Wall -o CMakeFiles/cmTC_0480a.dir/src.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0480a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0480a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_0480a.dir/src.c.o -o cmTC_0480a  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test _WNO_UNUSED_PARAMETER succeeded with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a523f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a523f.dir/build.make CMakeFiles/cmTC_a523f.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a523f.dir/src.c.o
+/usr/bin/cc -D_WNO_UNUSED_PARAMETER  -Wall    -Wno-unused-parameter -o CMakeFiles/cmTC_a523f.dir/src.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a523f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a523f.dir/link.txt --verbose=1
+/usr/bin/cc -Wall  CMakeFiles/cmTC_a523f.dir/src.c.o -o cmTC_a523f  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test _WNO_UNUSED_VARIABLE succeeded with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8baa4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8baa4.dir/build.make CMakeFiles/cmTC_8baa4.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8baa4.dir/src.c.o
+/usr/bin/cc -D_WNO_UNUSED_VARIABLE  -Wall -Wno-unused-parameter    -Wno-unused-variable -o CMakeFiles/cmTC_8baa4.dir/src.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8baa4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8baa4.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wno-unused-parameter  CMakeFiles/cmTC_8baa4.dir/src.c.o -o cmTC_8baa4  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test _WNO_UNUSED_FUNCTION succeeded with the following output:
+Change Dir: /workspace/qjs-modules/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1a563/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1a563.dir/build.make CMakeFiles/cmTC_1a563.dir/build
+gmake[1]: Entering directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a563.dir/src.c.o
+/usr/bin/cc -D_WNO_UNUSED_FUNCTION  -Wall -Wno-unused-parameter -Wno-unused-variable    -Wno-unused-function -o CMakeFiles/cmTC_1a563.dir/src.c.o -c /workspace/qjs-modules/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1a563
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a563.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wno-unused-parameter -Wno-unused-variable  CMakeFiles/cmTC_1a563.dir/src.c.o -o cmTC_1a563  /usr/local/lib/libqjs.a 
+gmake[1]: Leaving directory '/workspace/qjs-modules/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

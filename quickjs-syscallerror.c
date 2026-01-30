@@ -747,7 +747,7 @@ js_syscallerror_init(JSContext* ctx, JSModuleDef* m) {
 
   assert(JS_IsObject(error));
 
-  JS_NewClassID(&js_syscallerror_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_syscallerror_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_syscallerror_class_id, &js_syscallerror_class);
 
   syscallerror_ctor = JS_NewCFunction2(ctx, js_syscallerror_constructor, "SyscallError", 1, JS_CFUNC_constructor, 0);

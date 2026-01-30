@@ -2389,7 +2389,7 @@ const JSCFunctionListEntry js_transform_controller_funcs[] = {
  */
 int
 js_stream_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_reader_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_reader_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_reader_class_id, &js_default_reader_class);
   JS_NewClass(JS_GetRuntime(ctx), js_reader_class_id, &js_byob_reader_class);
 
@@ -2409,7 +2409,7 @@ js_stream_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_SetConstructor(ctx, byob_reader_ctor, byob_reader_proto);
 
-  JS_NewClassID(&js_readable_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_readable_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_readable_class_id, &js_readable_class);
 
   readable_proto = JS_NewObject(ctx);
@@ -2432,7 +2432,7 @@ js_stream_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetPropertyFunctionList(ctx, byob_request_proto, js_byob_request_proto_funcs, countof(js_byob_request_proto_funcs));
   JS_SetClassProto(ctx, js_readable_class_id, byob_request_proto);
 
-  JS_NewClassID(&js_writer_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_writer_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_writer_class_id, &js_writer_class);
 
   writer_proto = JS_NewObject(ctx);
@@ -2443,7 +2443,7 @@ js_stream_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_SetConstructor(ctx, writer_ctor, writer_proto);
 
-  JS_NewClassID(&js_writable_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_writable_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_writable_class_id, &js_writable_class);
 
   writable_proto = JS_NewObject(ctx);
@@ -2458,7 +2458,7 @@ js_stream_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetPropertyFunctionList(ctx, writable_controller, js_writable_controller_funcs, countof(js_writable_controller_funcs));
   JS_SetClassProto(ctx, js_writable_class_id, writable_controller);
 
-  JS_NewClassID(&js_transform_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_transform_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_transform_class_id, &js_transform_class);
 
   transform_proto = JS_NewObject(ctx);

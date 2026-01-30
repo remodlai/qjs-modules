@@ -590,7 +590,7 @@ pointer_from(Pointer* ptr, JSValueConst value, JSContext* ctx) {
     if(pointer_fromstring(ptr, value, ctx))
       return TRUE;
 
-  if(JS_IsArray(ctx, value))
+  if(JS_IsArray(value))
     if(pointer_fromarray(ptr, value, ctx))
       return TRUE;
 

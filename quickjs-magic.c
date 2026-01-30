@@ -383,7 +383,7 @@ static const JSCFunctionListEntry js_magic_static[] = {
 
 int
 js_magic_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_magic_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_magic_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_magic_class_id, &js_magic_class);
 
   magic_ctor = JS_NewCFunction2(ctx, js_magic_constructor, "Magic", 1, JS_CFUNC_constructor, 0);

@@ -288,7 +288,7 @@ static JSClassDef js_json_parser_class = {
 
 static int
 js_json_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_json_parser_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_json_parser_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_json_parser_class_id, &js_json_parser_class);
 
   json_parser_proto = JS_NewObjectProto(ctx, JS_NULL);

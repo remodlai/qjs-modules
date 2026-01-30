@@ -2236,7 +2236,7 @@ string_to_object(JSContext* ctx, const char* ctor_name, const char* s) {
 
 int
 js_pgsql_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_pgconn_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_pgconn_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_pgconn_class_id, &js_pgconn_class);
 
   pgsql_ctor = JS_NewCFunction2(ctx, js_pgconn_constructor, "PGconn", 1, JS_CFUNC_constructor, 0);
@@ -2254,7 +2254,7 @@ js_pgsql_init(JSContext* ctx, JSModuleDef* m) {
   JSValue error_ctor = JS_GetPropertyStr(ctx, error_proto, "constructor");
   JS_FreeValue(ctx, error);
 
-  JS_NewClassID(&js_pgsqlerror_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_pgsqlerror_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_pgsqlerror_class_id, &js_pgsqlerror_class);
 
   pgsqlerror_ctor = JS_NewCFunction2(ctx, js_pgsqlerror_constructor, "PGerror", 1, JS_CFUNC_constructor, 0);
@@ -2268,7 +2268,7 @@ js_pgsql_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_pgsqlerror_class_id, pgsqlerror_proto);
   JS_SetConstructor(ctx, pgsqlerror_ctor, pgsqlerror_proto);
 
-  JS_NewClassID(&js_pgresult_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_pgresult_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_pgresult_class_id, &js_pgresult_class);
 
   pgresult_ctor = JS_NewCFunction2(ctx, js_pgresult_constructor, "PGresult", 1, JS_CFUNC_constructor, 0);

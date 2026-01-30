@@ -558,7 +558,7 @@ lexer_lex(Lexer* lex, JSValueConst this_val, int argc, JSValueConst argv[], JSCo
   if(argc > 0) {
     int64_t i;
 
-    if(!JS_IsString(argv[0]) && !JS_IsArray(ctx, argv[0]) && !JS_ToInt64Ext(ctx, &i, argv[0]))
+    if(!JS_IsString(argv[0]) && !JS_IsArray(argv[0]) && !JS_ToInt64Ext(ctx, &i, argv[0]))
       flags = i;
     else
       flags = lexer_to_mask(lex, argv[0], ctx);
@@ -1666,7 +1666,7 @@ static int
 js_lexer_init(JSContext* ctx, JSModuleDef* m) {
   js_location_init(ctx, m);
 
-  JS_NewClassID(&js_token_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_token_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_token_class_id, &js_token_class);
 
   token_proto = JS_NewObject(ctx);
@@ -1680,7 +1680,7 @@ js_lexer_init(JSContext* ctx, JSModuleDef* m) {
 
   // js_set_inspect_method(ctx, token_proto, js_token_inspect);
 
-  JS_NewClassID(&js_lexer_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_lexer_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_lexer_class_id, &js_lexer_class);
 
   lexer_proto = JS_NewObject(ctx);

@@ -548,7 +548,7 @@ static const JSCFunctionListEntry js_encoder_methods[] = {
 
 int
 js_code_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_decoder_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_decoder_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_decoder_class_id, &js_decoder_class);
 
   textdecoder_ctor = JS_NewCFunction2(ctx, js_decoder_constructor, "TextDecoder", 1, JS_CFUNC_constructor, 0);
@@ -559,7 +559,7 @@ js_code_init(JSContext* ctx, JSModuleDef* m) {
 
   JS_SetConstructor(ctx, textdecoder_ctor, textdecoder_proto);
 
-  JS_NewClassID(&js_encoder_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_encoder_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_encoder_class_id, &js_encoder_class);
 
   textencoder_ctor = JS_NewCFunction2(ctx, js_encoder_constructor, "TextEncoder", 1, JS_CFUNC_constructor, 0);

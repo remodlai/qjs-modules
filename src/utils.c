@@ -2195,7 +2195,7 @@ js_value_clone(JSContext* ctx, JSValueConst value) {
       JSPropertyEnum* tab_atom;
       uint32_t tab_atom_len;
 
-      ret = JS_IsArray(ctx, value) ? JS_NewArray(ctx) : JS_NewObject(ctx);
+      ret = JS_IsArray(value) ? JS_NewArray(ctx) : JS_NewObject(ctx);
 
       if(!JS_GetOwnPropertyNames(ctx, &tab_atom, &tab_atom_len, value, JS_GPN_STRING_MASK | JS_GPN_SYMBOL_MASK | JS_GPN_ENUM_ONLY)) {
         for(uint32_t i = 0; i < tab_atom_len; i++) {

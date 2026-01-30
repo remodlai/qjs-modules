@@ -121,7 +121,7 @@ property_enumeration_key(const PropertyEnumeration* it, JSContext* ctx) {
 
   key = JS_AtomToValue(ctx, it->tab_atom[it->idx]);
 
-  if(JS_IsArray(ctx, it->obj)) {
+  if(JS_IsArray(it->obj)) {
     int64_t idx;
 
     if(!JS_ToInt64(ctx, &idx, key)) {

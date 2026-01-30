@@ -300,7 +300,7 @@ static const JSCFunctionListEntry js_directory_static[] = {
 
 int
 js_directory_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_directory_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_directory_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_directory_class_id, &js_directory_class);
 
   directory_ctor = JS_NewCFunction2(ctx, js_directory_constructor, "Directory", 1, JS_CFUNC_constructor, 0);

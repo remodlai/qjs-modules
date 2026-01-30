@@ -238,7 +238,7 @@ predicate_eval(Predicate* pr, JSContext* ctx, JSArguments* args) {
 
           JS_Call(ctx, arg, JS_NULL, countof(argv), argv);
           JS_FreeValue(ctx, argv[0]);
-        } else if(JS_IsArray(ctx, arg)) {
+        } else if(JS_IsArray(arg)) {
           JS_SetPropertyStr(ctx, arg, "length", JS_NewUint32(ctx, capture_count));
 
           for(int i = 0; i < 2 * capture_count; i += 2) {

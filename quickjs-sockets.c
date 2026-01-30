@@ -990,7 +990,7 @@ optval_buf(JSContext* ctx, JSValueConst arg, int32_t** tmp_ptr, socklen_t* lenp)
   uint32_t len;
   uint8_t* buf;
 
-  if(JS_IsArray(ctx, arg)) {
+  if(JS_IsArray(arg)) {
     int i, n = MAX_NUM(1, MIN_NUM(js_array_length(ctx, arg), 1));
 
     len = n * sizeof(int32_t);
@@ -1027,7 +1027,7 @@ js_socketpair(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv
     default: break;
   }
 
-  if(argc < 4 && !JS_IsArray(ctx, argv[3]))
+  if(argc < 4 && !JS_IsArray(argv[3]))
     return JS_ThrowTypeError(ctx, "argument 4 must be array");
 
   if((result = socketpair(st.family, st.type, st.protocol, s)) != -1) {
@@ -3042,7 +3042,7 @@ js_sockets_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_sockaddr_class_id, sockaddr_proto);
   JS_SetConstructor(ctx, sockaddr_ctor, sockaddr_proto);
 
-  JS_NewClassID(&js_socket_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_socket_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_socket_class_id, &js_socket_class);
 
   socket_ctor = JS_NewCFunction2(ctx, js_socket_constructor, "Socket", 1, JS_CFUNC_constructor, 0);
@@ -3056,7 +3056,7 @@ js_sockets_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetClassProto(ctx, js_socket_class_id, socket_proto);
   JS_SetConstructor(ctx, socket_ctor, socket_proto);
 
-  JS_NewClassID(&js_asyncsocket_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_asyncsocket_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_asyncsocket_class_id, &js_asyncsocket_class);
 
   asyncsocket_ctor = JS_NewCFunction2(ctx, js_asyncsocket_constructor, "AsyncSocket", 1, JS_CFUNC_constructor, 0);

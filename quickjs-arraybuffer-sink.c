@@ -171,7 +171,7 @@ static const JSCFunctionListEntry js_arraybuffer_sink_proto_funcs[] = {
 
 static int
 js_arraybuffer_sink_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_arraybuffer_sink_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_arraybuffer_sink_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_arraybuffer_sink_class_id, &js_arraybuffer_sink_class);
 
   arraybuffer_sink_proto = JS_NewObject(ctx);

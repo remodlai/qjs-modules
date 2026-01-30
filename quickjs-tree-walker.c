@@ -603,7 +603,7 @@ static const JSCFunctionListEntry js_tree_iterator_proto_funcs[] = {
 
 static int
 js_tree_walker_init(JSContext* ctx, JSModuleDef* m) {
-  JS_NewClassID(&js_tree_walker_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_tree_walker_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_tree_walker_class_id, &js_tree_walker_class);
 
   tree_walker_proto = JS_NewObject(ctx);
@@ -615,7 +615,7 @@ js_tree_walker_init(JSContext* ctx, JSModuleDef* m) {
   JS_SetConstructor(ctx, tree_walker_ctor, tree_walker_proto);
   JS_SetPropertyFunctionList(ctx, tree_walker_ctor, js_tree_walker_static_funcs, countof(js_tree_walker_static_funcs));
 
-  JS_NewClassID(&js_tree_iterator_class_id);
+  JS_NewClassID(JS_GetRuntime(ctx), &js_tree_iterator_class_id);
   JS_NewClass(JS_GetRuntime(ctx), js_tree_iterator_class_id, &js_tree_iterator_class);
 
   tree_iterator_proto = JS_NewObject(ctx);
