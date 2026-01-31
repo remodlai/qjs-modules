@@ -3,7 +3,7 @@
 
 #include "char-utils.h"
 #include "buffer-utils.h"
-#include "libutf/include/libutf.h"
+#include "libutf.h"
 
 #if defined(_WIN32) || defined(__CYGWIN__) || defined(__MSYS__)
 #include <winnls.h>
