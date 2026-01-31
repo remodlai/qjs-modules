@@ -1605,7 +1605,7 @@ enum {
 };
 
 static JSValue
-js_pgresult_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_pgresult_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   PGSQLResult* res;
   uint32_t ntuples;
   JSValue ret = JS_NULL;

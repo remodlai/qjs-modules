@@ -265,7 +265,7 @@ static JSClassDef js_queue_iterator_class = {
 };
 
 static JSValue
-js_queue_iterator_next(JSContext* ctx, JSValueConst iter, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_queue_iterator_next(JSContext* ctx, JSValueConst iter, int argc, JSValueConst argv[], int* pdone, int magic) {
   JSValue ret = JS_UNDEFINED, queue_obj = JS_GetPropertyStr(ctx, iter, "queue");
   Queue* queue;
   Chunk* ch;

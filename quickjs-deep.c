@@ -309,7 +309,7 @@ js_deep_iterator_constructor(JSContext* ctx, JSValueConst new_target, int argc, 
 }
 
 static JSValue
-js_deep_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_deep_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   DeepIterator* iter;
   PropertyEnumeration* penum = 0;
   JSValue ret = JS_UNDEFINED;
@@ -471,7 +471,7 @@ js_deep_iterator_get(JSContext* ctx, JSValueConst this_val, int magic) {
 }
 
 static JSValue
-js_deep_iterator_return(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_deep_iterator_return(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   DeepIterator* iter;
 
   if(!(iter = JS_GetOpaque2(ctx, this_val, js_deep_iterator_class_id)))

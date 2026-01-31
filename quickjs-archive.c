@@ -831,7 +831,7 @@ js_archive_iterator(JSContext* ctx, JSValueConst this_val, int argc, JSValueCons
 }
 
 static JSValue
-js_archive_iterator_next(JSContext* ctx, JSValueConst iter, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_archive_iterator_next(JSContext* ctx, JSValueConst iter, int argc, JSValueConst argv[], int* pdone, int magic) {
   struct archive* ar;
   struct archive_entry* ent = NULL;
   int result = ARCHIVE_EOF;

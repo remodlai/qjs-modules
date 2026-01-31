@@ -501,7 +501,7 @@ fail:
 }
 
 JSValue
-js_tree_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_tree_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   PropertyEnumeration* it;
   JSValue ret = JS_UNDEFINED;
   TreeWalker* w = JS_GetOpaque(this_val, js_tree_iterator_class_id);

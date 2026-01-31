@@ -610,7 +610,7 @@ js_list_iterator_get(JSContext* ctx, JSValueConst this_val, int magic) {
 }
 
 static JSValue
-js_list_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_list_iterator_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   ListIterator* it;
   JSValue ret = JS_UNDEFINED;
 

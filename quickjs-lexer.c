@@ -1520,7 +1520,7 @@ js_lexer_nextfn(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst ar
 }
 
 static JSValue
-js_lexer_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], BOOL* pdone, int magic) {
+js_lexer_next(JSContext* ctx, JSValueConst this_val, int argc, JSValueConst argv[], int* pdone, int magic) {
   JSValue ret = js_lexer_nextfn(ctx, this_val, argc, argv, magic);
 
   *pdone = JS_IsUndefined(ret);
